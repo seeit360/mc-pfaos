@@ -37,7 +37,7 @@
       </div>
     </section>
 
-    <section class="section topic">
+    <section class="section topic hide">
       <div class="section-header">Console</div>
       <div class="section-body">
         <div class="legend">
