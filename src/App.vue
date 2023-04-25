@@ -118,7 +118,9 @@ export default {
       text-transform: none
   }
   button, html[type=button], [type=reset], [type=submit] {
-      -webkit-appearance: button
+      -webkit-appearance: button;
+      appearance: button
+
   }
   button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
       border-style: none;
@@ -149,6 +151,7 @@ export default {
   }
   [type=search] {
       -webkit-appearance: textfield;
+      appearance: textfield;
       outline-offset: -2px
   }
   [type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
@@ -251,7 +254,6 @@ export default {
       user-select: none;
       /* Non-prefixed version, currently supported by Chrome and Opera */
       -webkit-user-drag: none;
-      user-drag: none;
   }
   ::-moz-selection {
       background-color: #c6dafc;
