@@ -26,14 +26,14 @@
     <section class="section topic hide">
       <div class="section-header">Mobile</div>
       <div class="section-body">
-        <p>write something<p>
+        <p>Mobile topics<p>
       </div>
     </section>
 
     <section class="section topic hide">
       <div class="section-header">PC</div>
       <div class="section-body">
-        <p>write something<p>
+        <p>PC topics<p>
       </div>
     </section>
 
@@ -154,14 +154,14 @@
     <section class="section topic hide">
       <div class="section-header">Discord</div>
       <div class="section-body">
-      <p>write something<p>
+      <p>Discord topics<p>
       </div>
     </section>
 
     <section class="section topic hide">
       <div class="section-header">Friends</div>
       <div class="section-body">
-        <p>write something<p>
+        <p>Friends topics<p>
       </div>
     </section>
 
