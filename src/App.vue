@@ -331,7 +331,7 @@ export default {
     width: 100%;
     font-size: 1.4rem;
     color:#fff;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P';
   }
 
   .icon {
@@ -757,13 +757,13 @@ export default {
 
   .header h1 {
     font-size: 2.5rem;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P';
   }
   .header p {
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 0.8em;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P';
   }
   small {
     font-size: 0.9rem;
