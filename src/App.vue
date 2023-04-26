@@ -105,8 +105,23 @@
               </li>
               <li>
                 <small class="step">Step 6)</small>
-                <p>something</p>
-                <img alt="Step 6" class="fit" src="" />
+                <p>Open Minecraft</p>
+                <img alt="Step 5" class="fit" :src="path+'/images/switch-step6.png'" />
+              </li>
+              <li>
+                <small class="step">Step 7)</small>
+                <p>Choose "Servers" Tab > click *any* "Featured Servers"</p>
+                <img alt="Step 5" class="fit" :src="path+'/images/switch-step7.png'" />
+              </li>
+              <li>
+                <small class="step">Step 8)</small>
+                <p>step here</p>
+                <img alt="Step 5" class="fit" :src="path+'/images/switch-step8.png'" />
+              </li>
+              <li>
+                <small class="step">Step 9)</small>
+                <p>step here</p>
+                <img alt="Step 5" class="fit" :src="path+'/images/switch-step9.png'" />
               </li>
             </ul>
 
