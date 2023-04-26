@@ -238,33 +238,40 @@
               <a target="_self" rel="noopener noreferrer" href="friends">Friends</a>
             </li>
           </ul>
+          <Card :msg="message"/>
+          <input type="text" v-model="message" />
+          <button @click="alertMessage">Alert</button>
         </section>
+
         <div class="section container">
-          <img class="logo" :title="title" :alt="title" :src="image" />
-          <Card msg="this sucks"/>
+          <img class="logo" title="Logo" alt="Logo" src="/assets/cropped_logo.png" />
         </div>
+
       </div>
     </div>
   </section>
 </template>
 
 <script>
-const app = Vue.createApp({
-  data(){
-    return{
-      title: 'Logo',
-      image: './assets/cropped_logo.png'
-    }
-  }
-})
 
 import Card from './components/Card.vue';
+
 export default {
   name: 'App',
   components: {
-    Card,
+    Card
   },
-};
+  data(){
+    return {
+      message: 'Hi there'
+    }
+  },
+  methods: {
+    alertMessage(){
+      alert(this.message)
+    }
+  }
+}
 </script>
 
 <style></style>
