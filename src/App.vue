@@ -249,7 +249,6 @@
 </template>
 
 <script>
-
 const app = Vue.createApp({
   data(){
     return{
@@ -259,12 +258,11 @@ const app = Vue.createApp({
   }
 })
 
-
 import Card from './components/Card.vue';
 export default {
   name: 'App',
   components: {
-    Card
+    Card,
   },
 };
 </script>
