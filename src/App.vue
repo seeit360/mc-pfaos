@@ -55,22 +55,7 @@
               <li>
                 <p>Switch Tutorial</p>
                 <div class="video">
-                  <iframe
-                    width="100%"
-                    height="370"
-                    src="https://www.youtube.com/embed/zalT_oR1nPM"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen=""></iframe>
-                  <small class="video-credits"
-                    >Video courtesy of
-                    <a
-                      title="Pugmatt's YouTube Channel"
-                      target="_blank"
-                      href="https://www.youtube.com/@Pugmatt"
-                      >Pugmatt</a>
-                  </small>
+                  <YouTube channel="Pugmatt" videoId="zalT_oR1nPM" start="0" />
                 </div>
                 <div class="fireball"></div>
               </li>
@@ -129,21 +114,7 @@
               <li>
                 <p>Xbox Tutorial</p>
                 <div class="video">
-                  <iframe
-                    width="100%"
-                    height="370"
-                    src="https://www.youtube.com/embed/g8mHvasVHMs"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen=""></iframe>
-                  <small class="video-credits">Video courtesy of
-                    <a
-                      title="Pugmatt's YouTube Channel"
-                      target="_blank"
-                      href="https://www.youtube.com/@Pugmatt"
-                      >Pugmatt</a>
-                  </small>
+                  <YouTube channel="Pugmatt" videoId="g8mHvasVHMs" start="0" />
                 </div>
                 <div class="fireball"></div>
               </li>
@@ -168,22 +139,7 @@
             <ul id="playstation">
               <p>Playstation Tutorial</p>
               <div class="video">
-                <iframe
-                  width="100%"
-                  height="370"
-                  src="https://www.youtube.com/embed/0MJVVhDeu2s?start=352"
-                  title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen=""></iframe>
-                <small class="video-credits"
-                  >Video courtesy of
-                  <a
-                    alt="DonSibleyGames's YouTube Channel"
-                    target="_blank"
-                    href="https://www.youtube.com/@DonSibleyGames"
-                    >DonSibleyGames</a>
-                </small>
+                <YouTube channel="DonSibleyGames" videoId="0MJVVhDeu2s" start="352" />
               </div>
               <div class="fireball"></div>
               <li>
@@ -255,11 +211,13 @@
 <script>
 
 import Card from './components/Card.vue';
+import YouTube from './components/YouTube.vue';
 
 export default {
   name: 'App',
   components: {
-    Card
+    Card,
+    YouTube
   },
   data(){
     // how to image return as data
