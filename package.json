@@ -10,7 +10,9 @@
   "dependencies": {
     "core-js": "^3.30.1",
     "firebase": "^9.20.0",
-    "vue": "3.2.26"
+    "html-webpack-plugin": "^5.5.1",
+    "vue": "3.2.26",
+    "webpack": "^5.20.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.4.0",
