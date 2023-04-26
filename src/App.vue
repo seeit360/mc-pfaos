@@ -1,5 +1,5 @@
 <template>
-  <section id="app">
+  <section>
     <div class="card">
       <div class="fieldset">
         <section class="section header">
