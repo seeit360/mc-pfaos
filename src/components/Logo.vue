@@ -1,14 +1,13 @@
 <template>
-  <img class="logo" alt="Logo" src="{{url}}" />
+  <img class="logo" alt="Logo" src="" />
+  <span>{{msg}}</span>
 </template>
 
 <script>
-
-
 export default {
   name: 'Logo',
   props: {
-    url: String
+    msg: String
   }
 }
 </script>

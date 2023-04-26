@@ -240,7 +240,7 @@
           </ul>
         </section>
         <div class="section container">
-          <Logo url="/assets/cropped_logo.png" />
+          <img class="logo" :title="title" :alt="title" :src="image" />
           <Card msg="this sucks"/>
         </div>
       </div>
@@ -249,17 +249,21 @@
 </template>
 
 <script>
+const app = Vue.createApp({
+  data(){
+    return{
+      title: 'Logo',
+      image: './assets/cropped_logo.png'
+    }
+  }
+})
 
-import Logo from './components/Logo.vue';
 
 import Card from './components/Card.vue';
-
-
 export default {
   name: 'App',
   components: {
-    Card,
-    Logo,
+    Card
   },
 };
 </script>
