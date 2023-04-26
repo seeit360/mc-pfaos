@@ -81,17 +81,17 @@
                 <small class="step">Step 1)</small>
                 <p>Go to "System Settings"</p>
                 <p>Scroll to Internet > Internet Settings</p>
-                <img alt="Step 1" class="fit" src="/images/switch-step1.png" />
+                <img alt="Step 1" class="fit" :src="path+'/images/switch-step1.png'" />
               </li>
               <li>
                 <small class="step">Step 2)</small>
                 <p>Select "Change Settings"</p>
-                <img alt="Step 2" class="fit" src="/images/switch-step2.png" />
+                <img alt="Step 2" class="fit" :src="path+'/images/switch-step2.png'" />
               </li>
               <li>
                 <small class="step">Step 3)</small>
                 <p>Change "DNS Settings" to "Manual"</p>
-                <img alt="Step 3" class="fit" src="/images/switch-step3.png" />
+                <img alt="Step 3" class="fit" :src="path+'/images/switch-step3.png'" />
               </li>
               <li>
                 <small class="step">Step 4)</small>
@@ -101,7 +101,7 @@
                 <p>
                   Set the Secondary DNS to "8.8.8.8" <small>(Google DNS)</small>
                 </p>
-                <img alt="Step 4" class="fit" src="/assets/switch-step4.png" />
+                <img alt="Step 4" class="fit" :src="path+'/images/switch-step4.png'" />
                 <p>
                   <small>Issues? Other free DNS listings can be found here:
                     <a
@@ -116,7 +116,7 @@
               <li>
                 <small class="step">Step 5)</small>
                 <p>Click "Save"</p>
-                <img alt="Step 5" class="fit" src="/images/switch-step5.png" />
+                <img alt="Step 5" class="fit" :src="path+'/images/switch-step5.png'" />
               </li>
               <li>
                 <small class="step">Step 6)</small>
@@ -244,7 +244,7 @@
         </section>
 
         <div class="section container">
-          <img class="logo" title="Logo" alt="Logo" :src="logo" />
+          <img class="logo" :title="message" alt="Logo" :src="path+'/images/cropped_logo.png'" />
         </div>
 
       </div>
@@ -256,25 +256,21 @@
 
 import Card from './components/Card.vue';
 
-
 export default {
   name: 'App',
   components: {
     Card
   },
   data(){
+    // how to image return as data
     return {
-      message: 'Hi there'
+      message: 'Hi there',
+      path: 'https://cdn.jsdelivr.net/gh/seeit360/mc-pfaos@main/public'
     }
   },
   methods: {
     alertMessage(){
       alert(this.message)
-    }
-  },
-  computed: {
-    logo() {
-      return './assets/cropped_logo.png';
     }
   }
 }
