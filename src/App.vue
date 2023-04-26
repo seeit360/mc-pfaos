@@ -244,7 +244,6 @@
         </section>
 
         <div class="section container">
-          <img class="logo" title="Logo" alt="Logo" :src="Logo" />
           <img class="logo" title="Logo" alt="Logo" :src="logo" />
         </div>
 
@@ -256,7 +255,7 @@
 <script>
 
 import Card from './components/Card.vue';
-import Logo from "@/assets/cropped_logo.png"
+
 
 export default {
   name: 'App',
