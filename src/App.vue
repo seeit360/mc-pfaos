@@ -106,7 +106,7 @@
                   channel='DonSibleyGames'
                   videoId='0MJVVhDeu2s'
                   start='352'
-                  assist=''
+                  assist='BedrockConnect'
                   dns='104.238.130.180'
                   pfdns='000.000.000.000'
                 />
