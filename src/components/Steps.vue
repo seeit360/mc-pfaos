@@ -22,7 +22,7 @@
     <!--playstation-->
     <p v-if="title == 'Playstation'">todo</p>
 
-    <img alt="Step 1" class="fit" :src="path+'/images/'+imgGroup+'-step1.png'" />
+    <img alt="Step 1" class="fit" :src="path+'/img/'+imgGroup+'-step1.png'" />
   </li>
   <li>
     <small class="step">Step 2)</small>
@@ -34,7 +34,7 @@
     <!--playstation-->
     <p v-if="title == 'Playstation'">todo</p>
 
-    <img alt="Step 2" class="fit" :src="path+'/images/'+imgGroup+'-step2.png'" />
+    <img alt="Step 2" class="fit" :src="path+'/img/'+imgGroup+'-step2.png'" />
   </li>
   <li>
     <small class="step">Step 3)</small>
@@ -46,7 +46,7 @@
     <!--playstation-->
     <p v-if="title == 'Playstation'">todo</p>
 
-    <img alt="Step 3" class="fit" :src="path+'/images/'+imgGroup+'-step3.png'" />
+    <img alt="Step 3" class="fit" :src="path+'/img/'+imgGroup+'-step3.png'" />
   </li>
   <li>
     <small class="step">Step 4)</small>
@@ -77,7 +77,7 @@
       todo "8.8.8.8". <small>(Google DNS)</small>
     </p>
 
-    <img alt="Step 4" class="fit" :src="path+'/images/'+imgGroup+'-step4.png'" />
+    <img alt="Step 4" class="fit" :src="path+'/img/'+imgGroup+'-step4.png'" />
     <!--bedrockconnect-->
     <p v-if="assist == 'BedrockConnect'">
       <small>(Issues? Other DNS listings can be found here:
@@ -99,12 +99,12 @@
     <!--playstation-->
     <p v-if="title == 'Playstation'">todo</p>
     
-    <img alt="Step 5" class="fit" :src="path+'/images/'+imgGroup+'-step5.png'" />
+    <img alt="Step 5" class="fit" :src="path+'/img/'+imgGroup+'-step5.png'" />
   </li>
   <li>
     <small class="step">Step 6)</small>
     <p>Open Minecraft.</p>
-    <img alt="Step 6" class="fit" :src="path+'/images/'+imgGroup+'-step6.png'" />
+    <img alt="Step 6" class="fit" :src="path+'/img/'+imgGroup+'-step6.png'" />
   </li>
   <li>
     <small class="step">Step 7)</small>
@@ -113,11 +113,11 @@
     <p><small>(This step opens the "Servers List" screen.)</small></p>
     <!--consoles-->
     <div v-if="section == 'console'">
-      <img alt="Step 7" class="fit" :src="path+'/images/switch-step7.png'" />
+      <img alt="Step 7" class="fit" :src="path+'/img/console-step7.png'" />
     </div>
     <!--others-->
     <div v-if="section != 'console'">
-      <img alt="Step 7" class="fit" :src="path+'/images/'+imgGroup+'-step7.png'" />
+      <img alt="Step 7" class="fit" :src="path+'/img/'+imgGroup+'-step7.png'" />
     </div>
   </li>
   <li>
@@ -125,11 +125,11 @@
     <p>Choose "Connect to a Server" in "Server List" screen.</p>
     <!--consoles-->
     <div v-if="section == 'console'">
-      <img alt="Step 8" class="fit" :src="path+'/images/switch-step8.png'" />
+      <img alt="Step 8" class="fit" :src="path+'/img/console-step8.png'" />
     </div>
     <!--others-->
     <div v-if="section != 'console'">
-      <img alt="Step 8" class="fit" :src="path+'/images/'+imgGroup+'-step8.png'" />
+      <img alt="Step 8" class="fit" :src="path+'/img/'+imgGroup+'-step8.png'" />
     </div>
     <!--bedrockconnect-->
     <p v-if="assist == 'BedrockConnect'">
@@ -150,11 +150,11 @@
     <p><small>(This is the Phantom Frames Distribution BDS Server)</small></p>
     <!--consoles-->
     <div v-if="section == 'console'">
-      <img alt="Step 9" class="fit" :src="path+'/images/switch-step9.png'" />
+      <img alt="Step 9" class="fit" :src="path+'/img/console-step9.png'" />
     </div>
     <!--others-->
     <div v-if="section != 'console'">
-      <img alt="Step 9" class="fit" :src="path+'/images/'+imgGroup+'-step9.png'" />
+      <img alt="Step 9" class="fit" :src="path+'/img/'+imgGroup+'-step9.png'" />
     </div>
   </li>
   <li>
@@ -163,11 +163,11 @@
     <p>Click "Submit"</p>
     <!--consoles-->
     <div v-if="section == 'console'">
-      <img alt="Step 10" class="fit" :src="path+'/images/switch-step10.png'" />
+      <img alt="Step 10" class="fit" :src="path+'/img/console-step10.png'" />
     </div>
     <!--others-->
     <div v-if="section != 'console'">
-      <img alt="Step 10" class="fit" :src="path+'/images/'+imgGroup+'-step10.png'" />
+      <img alt="Step 10" class="fit" :src="path+'/img/'+imgGroup+'-step10.png'" />
     </div>
   </li>
   <li>
@@ -176,11 +176,11 @@
     <p>Accept the "Add-on Required" download to join.</p>
     <!--consoles-->
     <div v-if="section == 'console'">
-      <img alt="Step 11" class="fit" :src="path+'/images/switch-step11.png'" />
+      <img alt="Step 11" class="fit" :src="path+'/img/console-step11.png'" />
     </div>
     <!--others-->
     <div v-if="section != 'console'">
-      <img alt="Step 11" class="fit" :src="path+'/images/'+imgGroup+'-step11.png'" />
+      <img alt="Step 11" class="fit" :src="path+'/img/'+imgGroup+'-step11.png'" />
     </div>
     <p>Congratulations. You now have Phantom Frames.</p>
     <p><small>You are logged in as "Guest". As a courtesy to others, please keep visits to under 5 minutes, so others may join this Add-On distribution Minecraft World to download/update.</small></p>
@@ -215,7 +215,7 @@ export default {
     const branch = 'main'
     const dir = 'public'
     return {
-      // git project cdn as path - use `path+images/image_name` to get image hosting in html
+      // git project cdn as path - use `path+/img/<image_name>` to use image hosting in html
       path: 'https://cdn.jsdelivr.net/gh/'+git_user+'/'+project+'@'+branch+'/'+dir
     }
   }
