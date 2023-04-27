@@ -63,7 +63,7 @@
     <p><small>(This step opens the "Servers List" screen.)</small></p>
     <!--consoles-->
     <div v-if="section == 'console'">
-      <img alt="Step 7" class="fit" :src="path+'/images/console-step7.png'" />
+      <img alt="Step 7" class="fit" :src="path+'/images/switch-step7.png'" />
     </div>
     <!--others-->
     <div v-if="section != 'console'">
@@ -75,7 +75,7 @@
     <p>Choose "Connect to a Server" in "Server List" screen.</p>
     <!--consoles-->
     <div v-if="section == 'console'">
-      <img alt="Step 8" class="fit" :src="path+'/images/console-step8.png'" />
+      <img alt="Step 8" class="fit" :src="path+'/images/switch-step8.png'" />
     </div>
     <!--others-->
     <div v-if="section != 'console'">
@@ -99,7 +99,7 @@
     <p><small>(This is the Phantom Frames Distribution BDS Server)</small></p>
     <!--consoles-->
     <div v-if="section == 'console'">
-      <img alt="Step 9" class="fit" :src="path+'/images/console-step9.png'" />
+      <img alt="Step 9" class="fit" :src="path+'/images/switch-step9.png'" />
     </div>
     <!--others-->
     <div v-if="section != 'console'">
@@ -112,7 +112,7 @@
     <p>Click "Submit"</p>
     <!--consoles-->
     <div v-if="section == 'console'">
-      <img alt="Step 10" class="fit" :src="path+'/images/console-step10.png'" />
+      <img alt="Step 10" class="fit" :src="path+'/images/switch-step10.png'" />
     </div>
     <!--others-->
     <div v-if="section != 'console'">
@@ -125,7 +125,7 @@
     <p>Accept the "Add-on Required" download to join.</p>
     <!--consoles-->
     <div v-if="section == 'console'">
-      <img alt="Step 11" class="fit" :src="path+'/images/console-step11.png'" />
+      <img alt="Step 11" class="fit" :src="path+'/images/switch-step11.png'" />
     </div>
     <!--others-->
     <div v-if="section != 'console'">
