@@ -37,15 +37,15 @@
             <div class="section-body">
               <ul id="switch" class="toggle hide">
                 <Steps 
-                  section='console',
-                  title='Switch',
-                  hasVideo = 'true',
-                  imgGroup='switch',
-                  channel='Pugmatt', 
-                  videoId='zalT_oR1nPM', 
-                  start='0',
-                  assist='BedrockConnect',
-                  dns='104.238.130.180',
+                  section='console'
+                  title='Switch'
+                  hasVideo='true'
+                  imgGroup='switch'
+                  channel='Pugmatt'
+                  videoId='zalT_oR1nPM'
+                  start='0'
+                  assist='BedrockConnect'
+                  dns='104.238.130.180'
                   pfdns='000.000.000.000'
                 />
                 <li>
@@ -68,15 +68,15 @@
               </ul>
               <ul id="xbox" class="toggle hide">
                 <Steps 
-                  section = 'console',
-                  title='Xbox',
-                  imgGroup='xbox',
-                  hasVideo='true',
-                  channel='Pugmatt', 
-                  videoId='g8mHvasVHMs', 
-                  start='0',
-                  assist='BedrockConnect',
-                  dns='104.238.130.180',
+                  section='console'
+                  title='Xbox'
+                  imgGroup='xbox'
+                  hasVideo='true'
+                  channel='Pugmatt'
+                  videoId='g8mHvasVHMs'
+                  start='0'
+                  assist='BedrockConnect'
+                  dns='104.238.130.180'
                   pfdns='000.000.000.000'
                 />
                 <li>
@@ -99,15 +99,15 @@
               </ul>
               <ul id="playstation" class="toggle hide">
                 <Steps 
-                  section = 'console',
-                  title='Playstation',
-                  imgGroup='playstation',
-                  hasVideo='true',
-                  channel='DonSibleyGames', 
-                  videoId='0MJVVhDeu2s', 
-                  start='352',
-                  assist='',
-                  dns='104.238.130.180',
+                  section='console'
+                  title='Playstation'
+                  imgGroup='playstation'
+                  hasVideo='true'
+                  channel='DonSibleyGames'
+                  videoId='0MJVVhDeu2s'
+                  start='352'
+                  assist=''
+                  dns='104.238.130.180'
                   pfdns='000.000.000.000'
                 />
                 <li>
@@ -147,15 +147,15 @@
             <div class="section-body">
               <ul id="android" class="toggle hide">
                 <Steps 
-                  section='mobile',
-                  title='Android',
-                  hasVideo = 'false',
-                  imgGroup='android',
-                  channel='', 
-                  videoId='', 
-                  start='',
-                  assist='',
-                  dns='104.238.130.180',
+                  section='mobile'
+                  title='Android'
+                  hasVideo='false'
+                  imgGroup='android'
+                  channel=''
+                  videoId=''
+                  start=''
+                  assist=''
+                  dns='104.238.130.180'
                   pfdns='000.000.000.000'
                 />
                 <li>
@@ -178,15 +178,15 @@
               </ul>
               <ul id="iphone" class="toggle hide">
                 <Steps 
-                  section='mobile',
-                  title='iPhone',
-                  hasVideo = 'false',
-                  imgGroup='iphone',
-                  channel='', 
-                  videoId='', 
-                  start='',
-                  assist='',
-                  dns='104.238.130.180',
+                  section='mobile'
+                  title='iPhone'
+                  hasVideo='false'
+                  imgGroup='iphone'
+                  channel=''
+                  videoId=''
+                  start=''
+                  assist=''
+                  dns='104.238.130.180'
                   pfdns='000.000.000.000'
                 />
                 <li>
