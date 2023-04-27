@@ -8,33 +8,77 @@
   </li>
   <li>
     <p>{{ title }} Step-by-step</p>
+    <!--bedrockconnect-->
     <p v-if="assist == 'BedrockConnect'"><small>Method: {{assist}}</small></p>
   </li>
   <li>
     <small class="step">Step 1)</small>
     <p>Go to "System Settings".</p>
-    <p>Scroll to Internet > Internet Settings</p>
+
+    <!--switch-->
+    <p v-if="title == 'Switch'">Scroll to Internet > Internet Settings</p>
+    <!--xbox-->
+    <p v-if="title == 'Xbox'">Go to Network > Network Settings > Advanced Settings</p>
+    <!--playstation-->
+    <p v-if="title == 'Playstation'">todo</p>
+
     <img alt="Step 1" class="fit" :src="path+'/images/'+imgGroup+'-step1.png'" />
   </li>
   <li>
     <small class="step">Step 2)</small>
-    <p>Select "Change Settings".</p>
+
+    <!--switch-->
+    <p v-if="title == 'Switch'">Select "Change Settings".</p>
+    <!--xbox-->
+    <p v-if="title == 'Xbox'">Click "DNS settings".</p>
+    <!--playstation-->
+    <p v-if="title == 'Playstation'">todo</p>
+
     <img alt="Step 2" class="fit" :src="path+'/images/'+imgGroup+'-step2.png'" />
   </li>
   <li>
     <small class="step">Step 3)</small>
-    <p>Change "DNS Settings" to "Manual".</p>
+
+    <!--switch-->
+    <p v-if="title == 'Switch'">Change "DNS Settings" to "Manual".</p>
+    <!--xbox-->
+    <p v-if="title == 'Xbox'">Change "IPv4 DNS Settings" to "Manual".</p>
+    <!--playstation-->
+    <p v-if="title == 'Playstation'">todo</p>
+
     <img alt="Step 3" class="fit" :src="path+'/images/'+imgGroup+'-step3.png'" />
   </li>
   <li>
     <small class="step">Step 4)</small>
-    <p>
+
+    <!--switch-->
+    <p v-if="title == 'Switch'">
       Set the Primary DNS to "{{dns}}".
     </p>
-    <p>
+    <!--xbox-->
+    <p v-if="title == 'Xbox'">
+      Set the Primary IPv4 DNS to "{{dns}}".
+    </p>
+    <!--playstation-->
+    <p v-if="title == 'Playstation'">
+      todo "{{dns}}".
+    </p>
+
+    <!--switch-->
+    <p v-if="title == 'Switch'">
       Set the Secondary DNS to "8.8.8.8". <small>(Google DNS)</small>
     </p>
+    <!--xbox-->
+    <p v-if="title == 'Xbox'">
+      Set the Secondary IPv4 DNS to "8.8.8.8". <small>(Google DNS)</small>
+    </p>
+    <!--playstation-->
+    <p v-if="title == 'Playstation'">
+      todo "8.8.8.8". <small>(Google DNS)</small>
+    </p>
+
     <img alt="Step 4" class="fit" :src="path+'/images/'+imgGroup+'-step4.png'" />
+    <!--bedrockconnect-->
     <p v-if="assist == 'BedrockConnect'">
       <small>(Issues? Other DNS listings can be found here:
         <a
@@ -48,7 +92,13 @@
   </li>
   <li>
     <small class="step">Step 5)</small>
-    <p>Click "Save".</p>
+    <!--switch-->
+    <p v-if="title == 'Switch'">Click "Save".</p>
+    <!--xbox-->
+    <p v-if="title == 'Xbox'">Wait for connection > Click "Continue".</p>
+    <!--playstation-->
+    <p v-if="title == 'Playstation'">todo</p>
+    
     <img alt="Step 5" class="fit" :src="path+'/images/'+imgGroup+'-step5.png'" />
   </li>
   <li>
@@ -81,6 +131,7 @@
     <div v-if="section != 'console'">
       <img alt="Step 8" class="fit" :src="path+'/images/'+imgGroup+'-step8.png'" />
     </div>
+    <!--bedrockconnect-->
     <p v-if="assist == 'BedrockConnect'">
       <small>(Issues? Read Wiki:
         <a 
