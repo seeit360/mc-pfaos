@@ -262,45 +262,45 @@
     max-width:720px;
     padding:0;
     margin:auto;
-    zoom:1;
+    zoom:1
   }
   .fieldset {
       padding:30px;
-      border:0;
+      border:0
   }
   .fieldset> .section {
-      padding:0;
+      padding:0
   }
   .section-header {
-      margin: .5rem auto;
+      margin: .5rem auto
   }
   .legend {
       padding: 1em 0 0;
       margin: 0 0 -0.5em;
       text-align:center;
       border-bottom:0 solid transparent;
-      font-weight: bold;
+      font-weight: bold
   }
   .fieldset> .section> .legend {
-      font-size: 1.3rem;
+      font-size: 1.3rem
   }
   .section-body {
       position: relative;
       margin-top: 1rem;
       background-color: #fff;
       color: #323232;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
   }
   .section-body p {
     padding: 1px;
     margin-left:1rem;
-    margin-right: 1rem;
+    margin-right: 1rem
   }
   /*PHANTOM FRAMES TRANSFORMATION*/
 
   html {
     margin: 0;
-    height: 100%;
+    height: 100%
     
   }
   body {
@@ -309,7 +309,7 @@
     width: 100%;
     font-size: 1.4rem;
     color:#fff;
-    font-family: 'Press Start 2P';
+    font-family: 'Press Start 2P'
   }
 
   .icon {
@@ -732,6 +732,10 @@
     height: 1px;
     width: 1px;
   }
+  .tip {
+    font-family: 'Press Start 2P';
+    font-size: 1.4rem
+  }
 
   .header h1 {
     font-size: 2.5rem;
@@ -749,7 +753,7 @@
   }
   a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: none
   }
   a:hover {
     color: rgb(151 109 197);
@@ -757,35 +761,35 @@
   li {
     margin-bottom: 10px;
   }
-  li > a {
+  li  a {
     text-decoration: underline;
   }
   h1.name::before {
-    content: 'Phantom Frames';
+    content: 'Phantom Frames'
   }
   ul {
     line-height: 1.4;
     list-style: none;
     margin-top: 1.5rem;
     margin-left: 0;
-    padding-left: 0;
+    padding-left: 0
   }
 
   li::before {
     margin-right:10px;
-    content: '>';
+    content: '>'
   }
   li:last-of-type {
-    padding-bottom: 20px;
+    padding-bottom: 20px
   }
   .section-body li::before {
     margin-right:8px;
-    content: '';
+    content: ''
   }
 
   .sub{
     padding-left:20px;
-    padding-right:20px;
+    padding-right:20px
   }
   .sub a:hover{
     color:#111
@@ -798,17 +802,17 @@
       top: calc(80vh - 1456px);
       z-index: -1;
       height: 0;
-      left: 74px;
+      left: 74px
   }
   .logo {
       scale: 50%;
-      z-index: -1;
+      z-index: -1
   }
 
   .fit {
     width: 100%;
     height: auto;
-    padding: 0 20px;
+    padding: 0 20px
   }
   .video {
     width: 100%;
@@ -816,7 +820,7 @@
     min-height: 370px;
     overflow: hidden;
     z-index: 1;
-    position: relative;
+    position: relative
   }
   .video-credits {
     float:right;
@@ -832,7 +836,7 @@
     top: -380px;
     animation: fireball 0.5s linear infinite;
     z-index: 0;
-    scale: 70%;
+    scale: 70%
   }
   @keyframes fireball {
     0%,
@@ -868,7 +872,7 @@
         180px 300px 0 0 rgba(255, 87, 34, 1), 200px 300px 0 0 rgba(255, 87, 34, 1),
         220px 300px 0 0 rgba(255, 87, 34, 1);
       height: 20px;
-      width: 20px;
+      width: 20px
     }
     25.01%,
     50% {
@@ -903,7 +907,7 @@
         260px 280px 0 0 rgba(255, 87, 34, 1), 160px 300px 0 0 rgba(255, 87, 34, 1),
         180px 300px 0 0 rgba(255, 87, 34, 1), 200px 300px 0 0 rgba(255, 87, 34, 1);
       height: 20px;
-      width: 20px;
+      width: 20px
     }
     50.01%,
     75% {
@@ -938,7 +942,7 @@
         140px 300px 0 0 rgba(255, 87, 34, 1), 160px 300px 0 0 rgba(255, 87, 34, 1),
         240px 300px 0 0 rgba(255, 87, 34, 1);
       height: 20px;
-      width: 20px;
+      width: 20px
     }
     75.01%,
     100% {
@@ -972,7 +976,7 @@
         140px 300px 0 0 rgba(255, 87, 34, 1), 220px 300px 0 0 rgba(255, 87, 34, 1),
         240px 300px 0 0 rgba(255, 87, 34, 1), 260px 300px 0 0 rgba(255, 87, 34, 1);
       height: 20px;
-      width: 20px;
+      width: 20px
     }
   }
 
@@ -985,7 +989,7 @@
       position: fixed;
       scale:75%;
       bottom: 0;
-      left: calc(100vw - 250px);
+      left: calc(100vw - 250px)
     }
     .container {
       position: fixed;
@@ -993,50 +997,66 @@
       left: -178px;
       height: inherit;
       top: initial;
-      z-index: -1;
+      z-index: -1
     }
   }
   @media only screen and (max-width: 1096px) {
     .container {
-      top:0;
+      top:0
     }
     .logo {
       top: inherit;
-      margin-top: -366px;
+      margin-top: -366px
     }
   }
   @media only screen and (min-width: 1265px) {
     .nav {
         scale: 100%;
         bottom: 28px;
-        left: calc(100vw - 288px);
+        left: calc(100vw - 288px)
     }
   }
   @media only screen and (max-width: 685px) {
+    .section-body p {
+      margin-left: .25rem;
+      margin-right: .25rem
+    }
+    h1.name{
+        font-size: 1.75rem
+    }
     .logo {
-      margin-left: -209px;
+      margin-left: -195px
     }
     .container {
       top:0;
       left:0
     }
+    .fieldset {
+      padding: 6px
+    }
+    .tip{
+      font-size: 1rem
+    }
+    .fit {
+      padding: 0
+    }
   }
   @media only screen and (max-width: 684px) {
     .container {
-        top: 280px;
+        top: 280px
     }
   }
   @media only screen and (max-width: 280px) {
     .logo {
-        scale: 45%;
+        scale: 45%
     }
   }
   @media only screen and (max-width: 900px) {
     .nav {
-      bottom: -1em;
+      bottom: -1em
     }
     @media all and (orientation: landscape) {}
     h1 {
-      font-size: 1.5rem;
+      font-size: 1.5rem
     }
   }

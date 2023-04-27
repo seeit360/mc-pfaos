@@ -23,7 +23,7 @@ export default {
   props: {
     channel: String,
     videoId: String,
-    start: Number
+    start: String
   }
 }
 </script>

@@ -5,27 +5,19 @@
         <section class="section header">
           <h1 class="name"></h1>
           <p>Installation Guide</p>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://twitter.com/TestPattern360"
-          >
-            <i class="icon twitter" title="Follow Me (Twitter)"></i>
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/seeit360"
-          >
-            <i class="icon github" title="Crafting (GitHub)"></i>
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://paypal.me/phantomframes"
-          >
-            <i class="icon emerald" title="Drop Loot (PayPal)"></i>
-          </a>
+            <!--CssLink-->
+          <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
+          <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
+          <CssLink :style="classes_1c" :text="title_1c" :url="url_1c" @mouseover="showInfo['1c'] = true" @mouseleave="showInfo['1c'] = false" />
+          <span class="tip" v-if="showInfo['1a']">
+            {{ title_1a }}
+          </span>
+          <span class="tip" v-if="showInfo['1b']">
+            {{ title_1b }}
+          </span>
+          <span class="tip" v-if="showInfo['1c']">
+            {{ title_1c }}
+          </span>
         </section>
 
         <section class="section topic">
@@ -53,7 +45,8 @@
 
             <ul id="switch">
               <li>
-                <p>Switch Tutorial</p>
+                <p>Switch Tutorial:</p>
+                <p><small>Method: BedrockConnect</small></p>
                 <div class="video">
                   <YouTube channel="Pugmatt" videoId="zalT_oR1nPM" start="0" />
                 </div>
@@ -61,6 +54,7 @@
               </li>
               <li>
                 <p>Switch Step-by-step</p>
+                <p><small>Method: BedrockConnect</small></p>
               </li>
               <li>
                 <small class="step">Step 1)</small>
@@ -81,7 +75,7 @@
               <li>
                 <small class="step">Step 4)</small>
                 <p>
-                  Set the Primary DNS to "104.238.130.180". <small>(Free service)</small>
+                  Set the Primary DNS to "104.238.130.180". <small>(BedrockConnect)</small>
                 </p>
                 <p>
                   Set the Secondary DNS to "8.8.8.8". <small>(Google DNS)</small>
@@ -110,7 +104,8 @@
               </li>
               <li>
                 <small class="step">Step 7)</small>
-                <p>Choose "Servers" Tab > click *any* "Featured Servers".</p>
+                <p>Choose "Servers" Tab</p>
+                <p>Click any* "Featured Servers" listed. <small>(*not CubeCraft)</small></p>
                 <p><small>(This step opens the "Servers List" screen.)</small></p>
                 <img alt="Step 7" class="fit" :src="path+'/images/switch-step7.png'" />
               </li>
@@ -118,6 +113,16 @@
                 <small class="step">Step 8)</small>
                 <p>Choose "Connect to a Server" in "Server List" screen.</p>
                 <img alt="Step 8" class="fit" :src="path+'/images/switch-step8.png'" />
+                <p>
+                  <small>(Issues? Read Wiki:
+                    <a 
+                    title="Bedrock Connect Troubleshooting"
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    href="https://github.com/Pugmatt/BedrockConnect/wiki/Troubleshooting"
+                    >https://github.com/Pugmatt/BedrockConnect/wiki/Troubleshooting</a>)
+                  </small>
+                </p>
               </li>
               <li>
                 <small class="step">Step 9)</small>
@@ -138,7 +143,22 @@
                 <p>Accept the "Add-on Required" download to join.</p>
                 <img alt="Step 11" class="fit" :src="path+'/images/switch-step10.png'" />
                 <p>Congratulations. You now have Phantom Frames.</p>
-                <p><small>You are logged in as "Guest". As a courtesy to others, please keep visits to under 5 minutes, so others may join and download.</small></p>
+                <p><small>You are logged in as "Guest". As a courtesy to others, please keep visits to under 5 minutes, so others may join this Add-On distribution Minecraft World to download/update.</small></p>
+              </li>
+              <li>
+                <!--CssLink-->
+                <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
+                <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
+                <CssLink :style="classes_1c" :text="title_1c" :url="url_1c" @mouseover="showInfo['1c'] = true" @mouseleave="showInfo['1c'] = false" />
+                <span class="tip" v-if="showInfo['1a']">
+                  {{ title_1a }}
+                </span>
+                <span class="tip" v-if="showInfo['1b']">
+                  {{ title_1b }}
+                </span>
+                <span class="tip" v-if="showInfo['1c']">
+                  {{ title_1c }}
+                </span>
               </li>
             </ul>
 
@@ -226,13 +246,10 @@
               <a target="_self" rel="noopener noreferrer" href="friends">Friends</a>
             </li>
           </ul>
-          <Card :msg="message"/>
-          <input type="text" v-model="message" />
-          <button @click="alertMessage">Alert</button>
         </section>
 
         <div class="section container">
-          <img class="logo" :title="message" alt="Logo" :src="path+'/images/cropped_logo.png'" />
+          <img class="logo" alt="Logo" :src="path+'/images/cropped_logo.png'" />
         </div>
 
       </div>
@@ -244,24 +261,50 @@
 
 import Card from './components/Card.vue';
 import YouTube from './components/YouTube.vue';
+import CssLink from './components/CssLink.vue';
 
 export default {
   name: 'App',
   components: {
     Card,
-    YouTube
+    YouTube,
+    CssLink
   },
   data(){
-    // how to image return as data
+    // build image cdn host from vars
+    const git_user = 'seeit360',
+    const project = 'mc-pfaos',
+    const branch = 'main',
+    const dir = 'public',
     return {
-      message: 'Hi there',
-      path: 'https://cdn.jsdelivr.net/gh/seeit360/mc-pfaos@main/public'
+      // git project cdn as path - use `path+images/image_name` to get image hosting in html
+      path: 'https://cdn.jsdelivr.net/gh/'+git_user+'/'+project+'@'+branch+'/'+dir,
+
+      // CssLink settings
+      classes_1a: 'icon twitter',
+      title_1a: 'Follow Me (Twitter)',
+      url_1a: 'https://twitter.com/TestPattern360',
+
+      classes_1b: 'icon github',
+      title_1b: 'Crafting (GitHub)',
+      url_1b: 'https://github.com/seeit360',
+
+      classes_1c: 'icon emerald',
+      title_1c: 'Drop Loot (PayPal)',
+      url_1c: 'https://paypal.me/phantomframes',
+
+      // hover CssLink event
+      showInfo:{
+        '1a':false,
+        '1b':false,
+        '1c':false
+      }
+
+
     }
   },
   methods: {
-    alertMessage(){
-      alert(this.message)
-    }
+    
   }
 }
 </script>
