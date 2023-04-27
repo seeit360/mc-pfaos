@@ -13,14 +13,21 @@
   </li>
   <li>
     <small class="step">Step 1)</small>
-    <p>Go to "System Settings".</p>
+
+    <!--switch-->
+    <p v-if="title == 'Switch'">Go to "System Settings".</p>
+    <!--xbox-->
+    <p v-if="title == 'Xbox'">Go to "Settings".</p>
+    <!--playstation-->
+    <p v-if="title == 'Playstation'">Open "Settings".</p>
 
     <!--switch-->
     <p v-if="title == 'Switch'">Scroll to Internet > Internet Settings</p>
     <!--xbox-->
-    <p v-if="title == 'Xbox'">Go to Network > Network Settings > Advanced Settings</p>
+    <p v-if="title == 'Xbox'">Select Network > Network Settings > Advanced Settings</p>
     <!--playstation-->
-    <p v-if="title == 'Playstation'">todo</p>
+    <p v-if="title == 'Playstation'">Select Network > Set Up Internet Connection ></p>
+    <p v-if="title == 'Playstation'">Use Wi-Fi (if wireless), LAN (if wired)</p>
 
     <img alt="Step 1" class="fit" :src="path+'/img/'+imgGroup+'-step1.png'" />
   </li>
@@ -32,7 +39,7 @@
     <!--xbox-->
     <p v-if="title == 'Xbox'">Click "DNS settings".</p>
     <!--playstation-->
-    <p v-if="title == 'Playstation'">todo</p>
+    <p v-if="title == 'Playstation'">Select "Custom"</p>
 
     <img alt="Step 2" class="fit" :src="path+'/img/'+imgGroup+'-step2.png'" />
   </li>
@@ -44,37 +51,32 @@
     <!--xbox-->
     <p v-if="title == 'Xbox'">Change "IPv4 DNS Settings" to "Manual".</p>
     <!--playstation-->
-    <p v-if="title == 'Playstation'">todo</p>
+    <p v-if="title == 'Playstation'">Choose your Wi-Fi Network</p>
+    <p v-if="title == 'Playstation'">IP > Automatic</p>
+    <p v-if="title == 'Playstation'">DHCP Host Name > Do Not Specify</p>
+    <p v-if="title == 'Playstation'">DNS Settings > Manual</p>
 
     <img alt="Step 3" class="fit" :src="path+'/img/'+imgGroup+'-step3.png'" />
   </li>
   <li>
     <small class="step">Step 4)</small>
 
-    <!--switch-->
-    <p v-if="title == 'Switch'">
+    <!--switch and playstation-->
+    <p v-if="title == 'Switch' || title == 'Playstation'">
       Set the Primary DNS to "{{dns}}".
     </p>
     <!--xbox-->
     <p v-if="title == 'Xbox'">
       Set the Primary IPv4 DNS to "{{dns}}".
     </p>
-    <!--playstation-->
-    <p v-if="title == 'Playstation'">
-      todo "{{dns}}".
-    </p>
 
-    <!--switch-->
-    <p v-if="title == 'Switch'">
+    <!--switch and playstation-->
+    <p v-if="title == 'Switch' || title == 'Playstation'">
       Set the Secondary DNS to "8.8.8.8". <small>(Google DNS)</small>
     </p>
     <!--xbox-->
     <p v-if="title == 'Xbox'">
       Set the Secondary IPv4 DNS to "8.8.8.8". <small>(Google DNS)</small>
-    </p>
-    <!--playstation-->
-    <p v-if="title == 'Playstation'">
-      todo "8.8.8.8". <small>(Google DNS)</small>
     </p>
 
     <img alt="Step 4" class="fit" :src="path+'/img/'+imgGroup+'-step4.png'" />
@@ -97,7 +99,9 @@
     <!--xbox-->
     <p v-if="title == 'Xbox'">Wait for connection > Click "Continue".</p>
     <!--playstation-->
-    <p v-if="title == 'Playstation'">todo</p>
+    <p v-if="title == 'Playstation'">MTU > Automatic</p>
+    <p v-if="title == 'Playstation'">Proxy Server > Do Not Use</p>
+    <p v-if="title == 'Playstation'">Test Internet Connection</p>
     
     <img alt="Step 5" class="fit" :src="path+'/img/'+imgGroup+'-step5.png'" />
   </li>
