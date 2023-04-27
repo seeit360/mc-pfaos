@@ -293,7 +293,8 @@
   }
   .section-body p {
     padding: 1px;
-    margin-left:1rem
+    margin-left:1rem;
+    margin-right: 1rem;
   }
   /*PHANTOM FRAMES TRANSFORMATION*/
 

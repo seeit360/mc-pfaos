@@ -64,64 +64,81 @@
               </li>
               <li>
                 <small class="step">Step 1)</small>
-                <p>Go to "System Settings"</p>
+                <p>Go to "System Settings".</p>
                 <p>Scroll to Internet > Internet Settings</p>
                 <img alt="Step 1" class="fit" :src="path+'/images/switch-step1.png'" />
               </li>
               <li>
                 <small class="step">Step 2)</small>
-                <p>Select "Change Settings"</p>
+                <p>Select "Change Settings".</p>
                 <img alt="Step 2" class="fit" :src="path+'/images/switch-step2.png'" />
               </li>
               <li>
                 <small class="step">Step 3)</small>
-                <p>Change "DNS Settings" to "Manual"</p>
+                <p>Change "DNS Settings" to "Manual".</p>
                 <img alt="Step 3" class="fit" :src="path+'/images/switch-step3.png'" />
               </li>
               <li>
                 <small class="step">Step 4)</small>
                 <p>
-                  Set the Primary DNS to "104.238.130.180" <small>(Free service)</small>
+                  Set the Primary DNS to "104.238.130.180". <small>(Free service)</small>
                 </p>
                 <p>
-                  Set the Secondary DNS to "8.8.8.8" <small>(Google DNS)</small>
+                  Set the Secondary DNS to "8.8.8.8". <small>(Google DNS)</small>
                 </p>
                 <img alt="Step 4" class="fit" :src="path+'/images/switch-step4.png'" />
                 <p>
-                  <small>Issues? Other free DNS listings can be found here:
+                  <small>(Issues? Other DNS listings can be found here:
                     <a
                       title="Bedrock Connect"
                       target="_blank"
                       rel="noopener noreferrer"
                       href="https://github.com/Pugmatt/BedrockConnect"
-                      >https://github.com/Pugmatt/BedrockConnect</a>
+                      >https://github.com/Pugmatt/BedrockConnect</a>)
                   </small>
                 </p>
               </li>
               <li>
                 <small class="step">Step 5)</small>
-                <p>Click "Save"</p>
+                <p>Click "Save".</p>
                 <img alt="Step 5" class="fit" :src="path+'/images/switch-step5.png'" />
               </li>
               <li>
                 <small class="step">Step 6)</small>
-                <p>Open Minecraft</p>
-                <img alt="Step 5" class="fit" :src="path+'/images/switch-step6.png'" />
+                <p>Open Minecraft.</p>
+                <img alt="Step 6" class="fit" :src="path+'/images/switch-step6.png'" />
               </li>
               <li>
                 <small class="step">Step 7)</small>
-                <p>Choose "Servers" Tab > click *any* "Featured Servers"</p>
-                <img alt="Step 5" class="fit" :src="path+'/images/switch-step7.png'" />
+                <p>Choose "Servers" Tab > click *any* "Featured Servers".</p>
+                <p><small>(This step opens the "Servers List" screen.)</small></p>
+                <img alt="Step 7" class="fit" :src="path+'/images/switch-step7.png'" />
               </li>
               <li>
                 <small class="step">Step 8)</small>
-                <p>step here</p>
-                <img alt="Step 5" class="fit" :src="path+'/images/switch-step8.png'" />
+                <p>Choose "Connect to a Server" in "Server List" screen.</p>
+                <img alt="Step 8" class="fit" :src="path+'/images/switch-step8.png'" />
               </li>
               <li>
                 <small class="step">Step 9)</small>
-                <p>step here</p>
-                <img alt="Step 5" class="fit" :src="path+'/images/switch-step9.png'" />
+                <p>Enter "000.000.000.000" as Server Address.</p>
+                <p>Enter "19132" as Server Port.</p>
+                <p><small>(This is the Phantom Frames Distribution BDS Server)</small></p>
+                <img alt="Step 9" class="fit" :src="path+'/images/switch-step9.png'" />
+              </li>
+              <li>
+                <small class="step">Step 10)</small>
+                <p>Optional: Toggle "Add to server list" to "On" for update visits.</p>
+                <p>Click "Submit"</p>
+                <img alt="Step 10" class="fit" :src="path+'/images/switch-step10.png'" />
+              </li>
+              <li>
+                <small class="step">Step 11)</small>
+                <p>Join the Phantom Frames Add-on Server.</p>
+                <p>Accept the "Add-on Required" download to join.</p>
+                <img alt="Step 11" class="fit" :src="path+'/images/switch-step10.png'" />
+                <p>Congratulations. You now have Phantom Frames.</p>
+                <p><small>You are logged in as "Guest". As a courtesy to others, please keep visits to under 5 minutes, so others may join and download.</small></p>
               </li>
             </ul>
 
