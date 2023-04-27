@@ -62,17 +62,25 @@
     <p>Click any "Featured Servers" listed.</p>
     <p><small>(This step opens the "Servers List" screen.)</small></p>
     <!--consoles-->
-    <img v-if="section == 'console'" alt="Step 7" class="fit" :src="path+'/images/console-step7.png'" />
+    <div v-if="section == 'console'">
+      <img alt="Step 7" class="fit" :src="path+'/images/console-step7.png'" />
+    </div>
     <!--others-->
-    <img v-if="section != 'console'" alt="Step 7" class="fit" :src="path+'/images/'+imgGroup+'-step7.png'" />
+    <div v-if="section != 'console'">
+      <img alt="Step 7" class="fit" :src="path+'/images/'+imgGroup+'-step7.png'" />
+    </div>
   </li>
   <li>
     <small class="step">Step 8)</small>
     <p>Choose "Connect to a Server" in "Server List" screen.</p>
     <!--consoles-->
-    <img v-if="section == 'console'" alt="Step 8" class="fit" :src="path+'/images/console-step8.png'" />
+    <div v-if="section == 'console'">
+      <img alt="Step 8" class="fit" :src="path+'/images/console-step8.png'" />
+    </div>
     <!--others-->
-    <img v-if="section != 'console'" alt="Step 8" class="fit" :src="path+'/images/'+imgGroup+'-step8.png'" />
+    <div v-if="section != 'console'">
+      <img alt="Step 8" class="fit" :src="path+'/images/'+imgGroup+'-step8.png'" />
+    </div>
     <p v-if="assist == 'BedrockConnect'">
       <small>(Issues? Read Wiki:
         <a 
@@ -90,24 +98,39 @@
     <p>Enter "19132" as Server Port.</p>
     <p><small>(This is the Phantom Frames Distribution BDS Server)</small></p>
     <!--consoles-->
-    <img v-if="section == 'console'" alt="Step 9" class="fit" :src="path+'/images/console-step9.png'" />
+    <div v-if="section == 'console'">
+      <img alt="Step 9" class="fit" :src="path+'/images/console-step9.png'" />
+    </div>
     <!--others-->
-    <img v-if="section != 'console'" alt="Step 9" class="fit" :src="path+'/images/'+imgGroup+'-step9.png'" />
+    <div v-if="section != 'console'">
+      <img alt="Step 9" class="fit" :src="path+'/images/'+imgGroup+'-step9.png'" />
+    </div>
   </li>
   <li>
     <small class="step">Step 10)</small>
     <p>Optional: Toggle "Add to server list" to "On" for update visits.</p>
     <p>Click "Submit"</p>
-    <img alt="Step 10" class="fit" :src="path+'/images/'+imgGroup+'-step10.png'" />
+    <!--consoles-->
+    <div v-if="section == 'console'">
+      <img alt="Step 10" class="fit" :src="path+'/images/console-step10.png'" />
+    </div>
+    <!--others-->
+    <div v-if="section != 'console'">
+      <img alt="Step 10" class="fit" :src="path+'/images/'+imgGroup+'-step10.png'" />
+    </div>
   </li>
   <li>
     <small class="step">Step 11)</small>
     <p>Join the Phantom Frames Add-on Server.</p>
     <p>Accept the "Add-on Required" download to join.</p>
     <!--consoles-->
-    <img v-if="section == 'console'" alt="Step 11" class="fit" :src="path+'/images/console-step10.png'" />
+    <div v-if="section == 'console'">
+      <img alt="Step 11" class="fit" :src="path+'/images/console-step11.png'" />
+    </div>
     <!--others-->
-    <img v-if="section != 'console'"alt="Step 11" class="fit" :src="path+'/images/'+imgGroup+'-step10.png'" />
+    <div v-if="section != 'console'">
+      <img alt="Step 11" class="fit" :src="path+'/images/'+imgGroup+'-step11.png'" />
+    </div>
     <p>Congratulations. You now have Phantom Frames.</p>
     <p><small>You are logged in as "Guest". As a courtesy to others, please keep visits to under 5 minutes, so others may join this Add-On distribution Minecraft World to download/update.</small></p>
   </li>
