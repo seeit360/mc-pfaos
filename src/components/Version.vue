@@ -1,14 +1,14 @@
 <template>
-  <span>{{ msg }}</span>
+  <span>{{ v }}</span>
 </template>
 
 <script>
 
 
 export default {
-  name: 'Card',
+  name: 'Version',
   props: {
-    msg: String
+    v: String
   }
 }
 </script>

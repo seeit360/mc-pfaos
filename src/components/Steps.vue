@@ -61,12 +61,18 @@
     <p>Choose "Servers" Tab</p>
     <p>Click any "Featured Servers" listed.</p>
     <p><small>(This step opens the "Servers List" screen.)</small></p>
-    <img alt="Step 7" class="fit" :src="path+'/images/'+imgGroup+'-step7.png'" />
+    <!--consoles-->
+    <img v-if="section == 'console'" alt="Step 7" class="fit" :src="path+'/images/console-step7.png'" />
+    <!--others-->
+    <img v-if="section != 'console'" alt="Step 7" class="fit" :src="path+'/images/'+imgGroup+'-step7.png'" />
   </li>
   <li>
     <small class="step">Step 8)</small>
     <p>Choose "Connect to a Server" in "Server List" screen.</p>
-    <img alt="Step 8" class="fit" :src="path+'/images/'+imgGroup+'-step8.png'" />
+    <!--consoles-->
+    <img v-if="section == 'console'" alt="Step 8" class="fit" :src="path+'/images/console-step8.png'" />
+    <!--others-->
+    <img v-if="section != 'console'" alt="Step 8" class="fit" :src="path+'/images/'+imgGroup+'-step8.png'" />
     <p v-if="assist == 'BedrockConnect'">
       <small>(Issues? Read Wiki:
         <a 
@@ -83,7 +89,10 @@
     <p>Enter "{{pfdns}}" as Server Address.</p>
     <p>Enter "19132" as Server Port.</p>
     <p><small>(This is the Phantom Frames Distribution BDS Server)</small></p>
-    <img alt="Step 9" class="fit" :src="path+'/images/'+imgGroup+'-step9.png'" />
+    <!--consoles-->
+    <img v-if="section == 'console'" alt="Step 9" class="fit" :src="path+'/images/console-step9.png'" />
+    <!--others-->
+    <img v-if="section != 'console'" alt="Step 9" class="fit" :src="path+'/images/'+imgGroup+'-step9.png'" />
   </li>
   <li>
     <small class="step">Step 10)</small>
@@ -95,7 +104,10 @@
     <small class="step">Step 11)</small>
     <p>Join the Phantom Frames Add-on Server.</p>
     <p>Accept the "Add-on Required" download to join.</p>
-    <img alt="Step 11" class="fit" :src="path+'/images/'+imgGroup+'-step10.png'" />
+    <!--consoles-->
+    <img v-if="section == 'console'" alt="Step 11" class="fit" :src="path+'/images/console-step10.png'" />
+    <!--others-->
+    <img v-if="section != 'console'"alt="Step 11" class="fit" :src="path+'/images/'+imgGroup+'-step10.png'" />
     <p>Congratulations. You now have Phantom Frames.</p>
     <p><small>You are logged in as "Guest". As a courtesy to others, please keep visits to under 5 minutes, so others may join this Add-On distribution Minecraft World to download/update.</small></p>
   </li>
