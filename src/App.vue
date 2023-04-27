@@ -20,7 +20,7 @@
           </span>
         </section>
 
-        <section class="section topic">
+        <section id="mobile" class="section topic hide">
           <div class="section-header">Mobile</div>
           <div class="section-body">
             <p>Mobile topics</p>
@@ -44,7 +44,7 @@
           </div>
         </section>
 
-        <section class="section topic">
+        <section id="pc" class="section topic hide">
           <div class="section-header">PC</div>
           <div class="section-body">
             <p>PC topics</p>
@@ -68,7 +68,7 @@
           </div>
         </section>
 
-        <section class="section topic">
+        <section id="console" class="section topic hide">
           <div class="section-header">Console</div>
           <div class="section-body">
             <div class="legend">
@@ -168,7 +168,7 @@
           </div>
         </section>
 
-        <section class="section topic">
+        <section id="discord" class="section topic hide">
           <div class="section-header">Discord</div>
           <div class="section-body">
             <p>Discord topics</p>
@@ -193,7 +193,7 @@
           </div>
         </section>
 
-        <section class="section topic">
+        <section id="friends" class="section topic hide">
           <div class="section-header">Friends</div>
           <div class="section-body">
             <p>Friends topics</p>
@@ -218,22 +218,22 @@
           </div>
         </section>
 
-        <section class="section topic">
+        <section id="nav" class="section topic">
           <ul>
             <li>
-              <a target="_self" rel="noopener noreferrer" href="console">Console</a>
+              <a target="_self" rel="noopener noreferrer" href="#console" @click="toggle('console')">Console</a>
             </li>
             <li>
-              <a target="_self" rel="noopener noreferrer" href="mobile">Mobile</a>
+              <a target="_self" rel="noopener noreferrer" href="#mobile" @click="toggle('mobile')">Mobile</a>
             </li>
             <li>
-              <a target="_self" rel="noopener noreferrer" href="pc">PC</a>
+              <a target="_self" rel="noopener noreferrer" href="#pc" @click="toggle('pc')">PC</a>
             </li>
             <li>
-              <a target="_self" rel="noopener noreferrer" href="discord">Discord</a>
+              <a target="_self" rel="noopener noreferrer" href="#discord" @click="toggle('discord')">Discord</a>
             </li>
             <li>
-              <a target="_self" rel="noopener noreferrer" href="friends">Friends</a>
+              <a target="_self" rel="noopener noreferrer" href="#friends" @click="toggle('friends')">Friends</a>
             </li>
           </ul>
         </section>
@@ -292,7 +292,10 @@ export default {
     }
   },
   methods: {
-    
+    toggle(id){
+      document.getElementById(id).classList.toggle("hide");
+      document.getElementById("nav").classList.add("nav");
+    }
   }
 }
 </script>
