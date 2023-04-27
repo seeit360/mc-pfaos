@@ -159,10 +159,10 @@ export default {
   },
   data() {
     // build image cdn host from vars
-    const git_user = 'seeit360',
-    const project = 'mc-pfaos',
-    const branch = 'main',
-    const dir = 'public',
+    const git_user = 'seeit360'
+    const project = 'mc-pfaos'
+    const branch = 'main'
+    const dir = 'public'
     return {
       // git project cdn as path - use `path+images/image_name` to get image hosting in html
       path: 'https://cdn.jsdelivr.net/gh/'+git_user+'/'+project+'@'+branch+'/'+dir
