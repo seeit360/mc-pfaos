@@ -6,78 +6,37 @@
           <h1 class="name"></h1>
           <p>Installation Guide</p>
             <!--CssLink-->
-          <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
-          <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
-          <CssLink :style="classes_1c" :text="title_1c" :url="url_1c" @mouseover="showInfo['1c'] = true" @mouseleave="showInfo['1c'] = false" />
-          <span class="tip" v-if="showInfo['1a']">
-            {{ title_1a }}
-          </span>
-          <span class="tip" v-if="showInfo['1b']">
-            {{ title_1b }}
-          </span>
-          <span class="tip" v-if="showInfo['1c']">
-            {{ title_1c }}
-          </span>
-        </section>
-
-        <section id="mobile" class="section topic hide">
-          <div class="section-header">Mobile</div>
-          <div class="section-body">
-            <p>Mobile topics</p>
-            <ul>
-              <li>
-                <!--CssLink-->
-                <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
-                <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
-                <CssLink :style="classes_1c" :text="title_1c" :url="url_1c" @mouseover="showInfo['1c'] = true" @mouseleave="showInfo['1c'] = false" />
-                <span class="tip" v-if="showInfo['1a']">
-                  {{ title_1a }}
-                </span>
-                <span class="tip" v-if="showInfo['1b']">
-                  {{ title_1b }}
-                </span>
-                <span class="tip" v-if="showInfo['1c']">
-                  {{ title_1c }}
-                </span>
-              </li>
-            </ul>
+          <div class="css-link">
+            <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
+            <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
+            <CssLink :style="classes_1c" :text="title_1c" :url="url_1c" @mouseover="showInfo['1c'] = true" @mouseleave="showInfo['1c'] = false" />
+            <span class="tip" v-if="showInfo['1a']">
+              {{ title_1a }}
+            </span>
+            <span class="tip" v-if="showInfo['1b']">
+              {{ title_1b }}
+            </span>
+            <span class="tip" v-if="showInfo['1c']">
+              {{ title_1c }}
+            </span>
           </div>
         </section>
 
-        <section id="pc" class="section topic hide">
-          <div class="section-header">PC</div>
-          <div class="section-body">
-            <p>PC topics</p>
-            <ul>
-              <li>
-                <!--CssLink-->
-                <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
-                <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
-                <CssLink :style="classes_1c" :text="title_1c" :url="url_1c" @mouseover="showInfo['1c'] = true" @mouseleave="showInfo['1c'] = false" />
-                <span class="tip" v-if="showInfo['1a']">
-                  {{ title_1a }}
-                </span>
-                <span class="tip" v-if="showInfo['1b']">
-                  {{ title_1b }}
-                </span>
-                <span class="tip" v-if="showInfo['1c']">
-                  {{ title_1c }}
-                </span>
-              </li>
-            </ul>
-          </div>
+        <section id="console" class="nav">
+          <ul>
+            <li class="header">
+              <a target="_self" rel="noopener noreferrer" href="#console" @click="toggle('sub-console')">Console</a>
+                <p id="sub-console" class="legend hide">
+                  <span class="sub"><a rel="noopener noreferrer" href="#console" @click="toggle('switch')">Switch</a></span>
+                  <span class="sub"><a rel="noopener noreferrer" href="#console" @click="toggle('xbox')">Xbox</a></span>
+                  <span class="sub"><a rel="noopener noreferrer" href="#console" @click="toggle('playstation')">PlayStation</a></span>
+                </p>
+            </li>
+          </ul>
         </section>
-
-        <section id="console" class="section topic hide">
-          <div class="section-header">Console</div>
+        <section id="topic-console" class="section topic">
           <div class="section-body">
-            <div class="legend">
-              <span class="sub"><a rel="noopener" href="#switch">Switch</a></span>
-              <span class="sub"><a rel="noopener" href="#xbox">Xbox</a></span>
-              <span class="sub"><a rel="noopener" href="#playstation">PlayStation</a></span>
-            </div>
-
-            <ul id="switch">
+            <ul id="switch" class="toggle hide">
               <Steps 
                 section='console',
                 title='Switch',
@@ -92,21 +51,23 @@
               />
               <li>
                 <!--CssLink-->
-                <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
-                <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
-                <CssLink :style="classes_1c" :text="title_1c" :url="url_1c" @mouseover="showInfo['1c'] = true" @mouseleave="showInfo['1c'] = false" />
-                <span class="tip" v-if="showInfo['1a']">
-                  {{ title_1a }}
-                </span>
-                <span class="tip" v-if="showInfo['1b']">
-                  {{ title_1b }}
-                </span>
-                <span class="tip" v-if="showInfo['1c']">
-                  {{ title_1c }}
-                </span>
+                <div class="css-link">
+                  <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
+                  <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
+                  <CssLink :style="classes_1c" :text="title_1c" :url="url_1c" @mouseover="showInfo['1c'] = true" @mouseleave="showInfo['1c'] = false" />
+                  <span class="tip" v-if="showInfo['1a']">
+                    {{ title_1a }}
+                  </span>
+                  <span class="tip" v-if="showInfo['1b']">
+                    {{ title_1b }}
+                  </span>
+                  <span class="tip" v-if="showInfo['1c']">
+                    {{ title_1c }}
+                  </span>
+                </div>
               </li>
             </ul>
-            <ul id="xbox">
+            <ul id="xbox" class="toggle hide">
               <Steps 
                 section = 'console',
                 title='Xbox',
@@ -121,22 +82,23 @@
               />
               <li>
                 <!--CssLink-->
-                <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
-                <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
-                <CssLink :style="classes_1c" :text="title_1c" :url="url_1c" @mouseover="showInfo['1c'] = true" @mouseleave="showInfo['1c'] = false" />
-                <span class="tip" v-if="showInfo['1a']">
-                  {{ title_1a }}
-                </span>
-                <span class="tip" v-if="showInfo['1b']">
-                  {{ title_1b }}
-                </span>
-                <span class="tip" v-if="showInfo['1c']">
-                  {{ title_1c }}
-                </span>
+                <div class="css-link">
+                  <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
+                  <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
+                  <CssLink :style="classes_1c" :text="title_1c" :url="url_1c" @mouseover="showInfo['1c'] = true" @mouseleave="showInfo['1c'] = false" />
+                  <span class="tip" v-if="showInfo['1a']">
+                    {{ title_1a }}
+                  </span>
+                  <span class="tip" v-if="showInfo['1b']">
+                    {{ title_1b }}
+                  </span>
+                  <span class="tip" v-if="showInfo['1c']">
+                    {{ title_1c }}
+                  </span>
+                </div>
               </li>
             </ul>
-
-            <ul id="playstation">
+            <ul id="playstation" class="toggle hide">
               <Steps 
                 section = 'console',
                 title='Playstation',
@@ -151,91 +113,200 @@
               />
               <li>
                 <!--CssLink-->
-                <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
-                <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
-                <CssLink :style="classes_1c" :text="title_1c" :url="url_1c" @mouseover="showInfo['1c'] = true" @mouseleave="showInfo['1c'] = false" />
-                <span class="tip" v-if="showInfo['1a']">
-                  {{ title_1a }}
-                </span>
-                <span class="tip" v-if="showInfo['1b']">
-                  {{ title_1b }}
-                </span>
-                <span class="tip" v-if="showInfo['1c']">
-                  {{ title_1c }}
-                </span>
+                <div class="css-link">
+                  <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
+                  <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
+                  <CssLink :style="classes_1c" :text="title_1c" :url="url_1c" @mouseover="showInfo['1c'] = true" @mouseleave="showInfo['1c'] = false" />
+                  <span class="tip" v-if="showInfo['1a']">
+                    {{ title_1a }}
+                  </span>
+                  <span class="tip" v-if="showInfo['1b']">
+                    {{ title_1b }}
+                  </span>
+                  <span class="tip" v-if="showInfo['1c']">
+                    {{ title_1c }}
+                  </span>
+                </div>
               </li>
             </ul>
           </div>
         </section>
 
-        <section id="discord" class="section topic hide">
-          <div class="section-header">Discord</div>
+        <section id="mobile" class="nav">
+          <ul>
+            <li class="header">
+              <a target="_self" rel="noopener noreferrer" href="#mobile" @click="toggle('sub-mobile')">Mobile</a>
+                <p id="sub-mobile" class="legend hide">
+                  <span class="sub"><a rel="noopener noreferrer" href="#mobile" @click="toggle('android')">Android</a></span>
+                  <span class="sub"><a rel="noopener noreferrer" href="#mobile" @click="toggle('iphone')">iPhone</a></span>
+                </p>
+            </li>
+          </ul>
+        </section>
+        <section id="topic-mobile" class="section topic">
+          <div class="section-body">
+            <ul id="android" class="toggle hide">
+              <Steps 
+                section='mobile',
+                title='Android',
+                hasVideo = 'false',
+                imgGroup='android',
+                channel='', 
+                videoId='', 
+                start='',
+                assist='',
+                dns='104.238.130.180',
+                pfdns='000.000.000.000'
+              />
+              <li>
+                <!--CssLink-->
+                <div class="css-link">
+                  <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
+                  <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
+                  <CssLink :style="classes_1c" :text="title_1c" :url="url_1c" @mouseover="showInfo['1c'] = true" @mouseleave="showInfo['1c'] = false" />
+                  <span class="tip" v-if="showInfo['1a']">
+                    {{ title_1a }}
+                  </span>
+                  <span class="tip" v-if="showInfo['1b']">
+                    {{ title_1b }}
+                  </span>
+                  <span class="tip" v-if="showInfo['1c']">
+                    {{ title_1c }}
+                  </span>
+                </div>
+              </li>
+            </ul>
+            <ul id="iphone" class="toggle hide">
+              <Steps 
+                section='mobile',
+                title='iPhone',
+                hasVideo = 'false',
+                imgGroup='iphone',
+                channel='', 
+                videoId='', 
+                start='',
+                assist='',
+                dns='104.238.130.180',
+                pfdns='000.000.000.000'
+              />
+              <li>
+                <!--CssLink-->
+                <div class="css-link">
+                  <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
+                  <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
+                  <CssLink :style="classes_1c" :text="title_1c" :url="url_1c" @mouseover="showInfo['1c'] = true" @mouseleave="showInfo['1c'] = false" />
+                  <span class="tip" v-if="showInfo['1a']">
+                    {{ title_1a }}
+                  </span>
+                  <span class="tip" v-if="showInfo['1b']">
+                    {{ title_1b }}
+                  </span>
+                  <span class="tip" v-if="showInfo['1c']">
+                    {{ title_1c }}
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="pc" class="nav">
+          <ul>
+            <li>
+              <a target="_self" rel="noopener noreferrer" href="#pc" @click="toggle('topic-pc')">PC</a>
+            </li>
+          </ul>
+        </section>
+        <section id="topic-pc" class="toggle section topic hide">
+          <div class="section-body">
+            <p>PC topics</p>
+            <ul>
+              <li></li>
+              <li>
+                <!--CssLink-->
+                <div class="css-link">
+                  <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
+                  <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
+                  <CssLink :style="classes_1c" :text="title_1c" :url="url_1c" @mouseover="showInfo['1c'] = true" @mouseleave="showInfo['1c'] = false" />
+                  <span class="tip" v-if="showInfo['1a']">
+                    {{ title_1a }}
+                  </span>
+                  <span class="tip" v-if="showInfo['1b']">
+                    {{ title_1b }}
+                  </span>
+                  <span class="tip" v-if="showInfo['1c']">
+                    {{ title_1c }}
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="discord" class="nav">
+          <ul>
+            <li>
+              <a target="_self" rel="noopener noreferrer" href="#discord" @click="toggle('topic-discord')">Discord</a>
+            </li>
+          </ul>
+        </section>
+        <section id="topic-discord" class="toggle section topic hide">
           <div class="section-body">
             <p>Discord topics</p>
             <ul>
               <li></li>
               <li>
                 <!--CssLink-->
-                <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
-                <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
-                <CssLink :style="classes_1c" :text="title_1c" :url="url_1c" @mouseover="showInfo['1c'] = true" @mouseleave="showInfo['1c'] = false" />
-                <span class="tip" v-if="showInfo['1a']">
-                  {{ title_1a }}
-                </span>
-                <span class="tip" v-if="showInfo['1b']">
-                  {{ title_1b }}
-                </span>
-                <span class="tip" v-if="showInfo['1c']">
-                  {{ title_1c }}
-                </span>
+                <div class="css-link">
+                  <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
+                  <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
+                  <CssLink :style="classes_1c" :text="title_1c" :url="url_1c" @mouseover="showInfo['1c'] = true" @mouseleave="showInfo['1c'] = false" />
+                  <span class="tip" v-if="showInfo['1a']">
+                    {{ title_1a }}
+                  </span>
+                  <span class="tip" v-if="showInfo['1b']">
+                    {{ title_1b }}
+                  </span>
+                  <span class="tip" v-if="showInfo['1c']">
+                    {{ title_1c }}
+                  </span>
+                </div>
               </li>
             </ul>
           </div>
         </section>
 
-        <section id="friends" class="section topic hide">
-          <div class="section-header">Friends</div>
+        <section id="friends" class="nav">
+          <ul>
+            <li>
+              <a target="_self" rel="noopener noreferrer" href="#friends" @click="toggle('topic-friends')">Friends</a>
+            </li>
+          </ul>
+        </section>
+        <section id="topic-friends" class="toggle section topic hide">
           <div class="section-body">
             <p>Friends topics</p>
             <ul>
               <li></li>
               <li>
                 <!--CssLink-->
-                <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
-                <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
-                <CssLink :style="classes_1c" :text="title_1c" :url="url_1c" @mouseover="showInfo['1c'] = true" @mouseleave="showInfo['1c'] = false" />
-                <span class="tip" v-if="showInfo['1a']">
-                  {{ title_1a }}
-                </span>
-                <span class="tip" v-if="showInfo['1b']">
-                  {{ title_1b }}
-                </span>
-                <span class="tip" v-if="showInfo['1c']">
-                  {{ title_1c }}
-                </span>
+                <div class="css-link">
+                  <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
+                  <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
+                  <CssLink :style="classes_1c" :text="title_1c" :url="url_1c" @mouseover="showInfo['1c'] = true" @mouseleave="showInfo['1c'] = false" />
+                  <span class="tip" v-if="showInfo['1a']">
+                    {{ title_1a }}
+                  </span>
+                  <span class="tip" v-if="showInfo['1b']">
+                    {{ title_1b }}
+                  </span>
+                  <span class="tip" v-if="showInfo['1c']">
+                    {{ title_1c }}
+                  </span>
+                </div>
               </li>
             </ul>
           </div>
-        </section>
-
-        <section id="nav" class="section topic">
-          <ul>
-            <li>
-              <a target="_self" rel="noopener noreferrer" href="#console" @click="toggle('console')">Console</a>
-            </li>
-            <li>
-              <a target="_self" rel="noopener noreferrer" href="#mobile" @click="toggle('mobile')">Mobile</a>
-            </li>
-            <li>
-              <a target="_self" rel="noopener noreferrer" href="#pc" @click="toggle('pc')">PC</a>
-            </li>
-            <li>
-              <a target="_self" rel="noopener noreferrer" href="#discord" @click="toggle('discord')">Discord</a>
-            </li>
-            <li>
-              <a target="_self" rel="noopener noreferrer" href="#friends" @click="toggle('friends')">Friends</a>
-            </li>
-          </ul>
         </section>
 
         <div class="section container">
@@ -293,8 +364,11 @@ export default {
   },
   methods: {
     toggle(id){
-      document.getElementById(id).classList.toggle("hide");
-      document.getElementById("nav").classList.add("nav");
+      var el = document.getElementsByClassName("toggle")
+      for(var i = 0; i < el.length; i++){
+        el[i].classList.add("hide")
+      }
+      document.getElementById(id).classList.toggle("hide")
     }
   }
 }

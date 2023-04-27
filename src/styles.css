@@ -739,13 +739,16 @@
 
   .header h1 {
     font-size: 2.5rem;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P';
   }
   .header p {
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 0.8em;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Press Start 2P';
+  }
+  .header p a:hover{
+    color: rgb(151 109 197);
   }
   small {
     font-size: 0.9rem;
@@ -807,6 +810,11 @@
   .logo {
       scale: 50%;
       z-index: -1
+  }
+  .nav ul li:last-of-type {
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-bottom:0
   }
 
   .fit {
@@ -985,12 +993,6 @@
   }
 
   @media only screen and (min-width: 1096px) {
-    .nav {
-      position: fixed;
-      scale:75%;
-      bottom: 0;
-      left: calc(100vw - 250px)
-    }
     .container {
       position: fixed;
       bottom: -90px;
@@ -1010,11 +1012,7 @@
     }
   }
   @media only screen and (min-width: 1265px) {
-    .nav {
-        scale: 100%;
-        bottom: 28px;
-        left: calc(100vw - 288px)
-    }
+
   }
   @media only screen and (max-width: 685px) {
     .section-body p {
@@ -1052,9 +1050,6 @@
     }
   }
   @media only screen and (max-width: 900px) {
-    .nav {
-      bottom: -1em
-    }
     @media all and (orientation: landscape) {}
     h1 {
       font-size: 1.5rem
