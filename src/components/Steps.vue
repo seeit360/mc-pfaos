@@ -206,7 +206,7 @@
 import YouTube from './YouTube.vue';
 export default {
 
-  name: 'ConsoleSteps',
+  name: 'Steps',
   components:{
     YouTube
   },

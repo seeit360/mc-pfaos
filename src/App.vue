@@ -324,6 +324,7 @@ import Version from './components/Version.vue';
 import CssLink from './components/CssLink.vue';
 import ConsoleSteps from './components/ConsoleSteps.vue';
 import MobileSteps from './components/MobileSteps.vue';
+import Steps from './components/Steps.vue';
 
 export default {
   name: 'App',
@@ -331,7 +332,8 @@ export default {
     Version,
     CssLink,
     ConsoleSteps,
-    MobileSteps
+    MobileSteps,
+    Steps
   },
   data(){
     // build image cdn host from vars
