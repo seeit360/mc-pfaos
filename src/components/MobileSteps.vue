@@ -40,7 +40,7 @@
   </li>
   <li>
     <small class="step">Step 2)</small>
-    <p>Search for the " {{method}}" App</p>
+    <p>Search for the "{{method}}" App</p>
     <!--image-->
     <img alt="Step 2" class="fit" :src="path+group+'-step2.png'" />
   </li>
@@ -52,22 +52,22 @@
   </li>
   <li>
     <small class="step">Step 4)</small>
-    <p>Open the Bedrock Together App</p>
-    <p>Server Address: "{{pfdns}}" <small>~or~</small></p>
+    <p>Open the "{{method}}" App</p>
+    <p>IP: "{{pfdns}}" <small>~or~</small></p>
     <p class="pad-left">"{{ip}}" </p>
-    <p>Server Port: "19132" </p>
+    <p>Port: "19132" </p>
     <p><small>(This is the Phantom Frames Distribution BDS Server)</small></p>
     <!--image-->
-    <img alt="Step 4" class="fit" :src="path+group+'-step4.png'" />
+    <img alt="Step 4" class="fit" :src="path+'mobile-step4.png'" />
   </li>
   <li>
     <small class="step">Step 5)</small>
     <p>Click "Watch Ad and Run" (:30 seconds)</p>
     <!--image-->
-    <img alt="Step 5" class="fit" :src="path+group+'-step5.png'" />
+    <img alt="Step 5" class="fit" :src="path+'mobile-step5.png'" />
     <!--bedrocktogether-->
     <p v-if="method != ''">
-      <small>Issues? Send a {{method}} support ticket:
+      <small>Issues? Send {{method}} a support ticket:
         <a
           :title="method"
           target="_blank"
@@ -81,15 +81,15 @@
     <small class="step">Step 6)</small>
     <p>Leave The App running until you complete the next steps</p>
     <!--image-->
-    <img alt="Step 6" class="fit" :src="path+group+'-step6.png'" />
+    <img alt="Step 6" class="fit" :src="path+'mobile-step6.png'" />
     <p><small>The {{method}} App is now a Local Network Minecraft "Friend"</small></p>
   </li>
   <li>
     <small class="step">Step 7)</small>
     <p>Open Minecraft </p>
-    <p>Select "Friends" tab > Click " {{method}}"</p>
+    <p>Select "Friends" tab > Click "{{method}}"</p>
     <!--image-->
-    <img alt="Step 7" class="fit" :src="path+group+'-step7.png'" />
+    <img alt="Step 7" class="fit" :src="path+'mobile-step7.png'" />
     <p><small> {{method}} will autoforward you to the Phantom Frames BDS Server </small></p>
   </li>
   <li>
