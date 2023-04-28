@@ -276,7 +276,7 @@
   }
   .legend {
       padding: 1em 0 0;
-      margin: 0 0 -0.5em;
+      margin: 0 1em;
       text-align:center;
       border-bottom:0 solid transparent;
       font-weight: bold
@@ -284,6 +284,14 @@
   .fieldset> .section> .legend {
       font-size: 1.3rem
   }
+  section.topic li {
+    margin-bottom: 0
+  }
+  ul.toggle li {
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 4rem;
+}
   .section-body {
       position: relative;
       margin-top: 1rem;
@@ -736,18 +744,36 @@
     font-family: 'Press Start 2P';
     font-size: 1.4rem
   }
+  i.ios::before{
+    content: '[ Link ]'
+  }
+  i.android::before{
+    content: '[ Link ]'
+  }
+  i.xbox::before{
+    content: '[ Link ]'
+  }
+  i.playstation::before{
+    content: '[ Link ]'
+  }
+  i.switch::before{
+    content: '[ Link ]'
+  }
+  p.pad-left {
+    padding-left: 10rem
+  }
 
   .header h1 {
     font-size: 2.5rem;
     font-family: 'Press Start 2P';
   }
-  .header p {
+  .header legend {
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 0.8em;
     font-family: 'Press Start 2P';
   }
-  .header p a:hover{
+  .header legend a:hover{
     color: rgb(151 109 197);
   }
   small {
@@ -794,9 +820,7 @@
     padding-left:20px;
     padding-right:20px
   }
-  .sub a:hover{
-    color:#111
-  }
+
   .title{
     font-family: 'Press Start 2P';
     font-size: 1.2rem

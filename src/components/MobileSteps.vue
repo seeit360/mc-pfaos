@@ -1,74 +1,95 @@
 <template>
-  <li v-if="videoId != ''">
-    <p class="title">{{title}} Tutorial</p>
+  <div v-if="videoId != ''">
     <div class="video">
       <YouTube :channel="channel" :videoId="videoId" :start="start" />
     </div>
     <div class="fireball"></div>
-  </li>
+  </div>
   <li>
     <p class="title">{{ title }} Step-by-step</p>
     <!--bedrocktogether-->
-    <p v-if="assist == 'BedrockTogether'"><small>Method: {{assist}}</small></p>
+    <p v-if="method != ''"><small>Method: {{method}}</small></p>
+    <p v-if="method != ''"><small>Pros: {{pros}}</small></p>
+    <p v-if="method != ''"><small>Cons: {{cons}}</small></p>
+    <!--description-->
+    <div>
+      <p>{{brief}}</p>
+    </div>
   </li>
   <li>
     <small class="step">Step 1)</small>
-    <p>Go to the store on your device</p>
-    <img alt="Step 1" class="fit" :src="path+imgGroup+'-step1.png'" />
+    <p>Go to the store on your device > 
+      <a 
+        target="_blank"
+        rel="noopener noreferrer" 
+        :href="storelink"
+      >
+        <i :class="group"></i>
+      </a>
+    </p>
+    <!--image-->
+    <img alt="Step 1" class="fit" :src="path+group+'-step1.png'" />
   </li>
   <li>
     <small class="step">Step 2)</small>
-    <p>Search for the "BedrockTogether" App</p
-    <img alt="Step 2" class="fit" :src="path+imgGroup+'-step2.png'" />
+    <p>Search for the " {{method}}" App</p>
+    <!--image-->
+    <img alt="Step 2" class="fit" :src="path+group+'-step2.png'" />
   </li>
   <li>
     <small class="step">Step 3)</small>
     <p>Install the Free version (ad supported)</p>
-    <img alt="Step 3" class="fit" :src="path+imgGroup+'-step3.png'" />
+    <!--image-->
+    <img alt="Step 3" class="fit" :src="path+group+'-step3.png'" />
   </li>
   <li>
     <small class="step">Step 4)</small>
     <p>Open the Bedrock Together App</p>
-    <p>Enter "{{pfdns}}" as Server Address.</p>
-    <p>Enter "19132" as Server Port.</p>
+    <p>Server Address: "{{pfdns}}" <small>~or~</small></p>
+    <p class="pad-left">"{{ip}}" </p>
+    <p>Server Port: "19132" </p>
     <p><small>(This is the Phantom Frames Distribution BDS Server)</small></p>
-    <img alt="Step 4" class="fit" :src="path+imgGroup+'-step4.png'" />
+    <!--image-->
+    <img alt="Step 4" class="fit" :src="path+group+'-step4.png'" />
   </li>
   <li>
     <small class="step">Step 5)</small>
-    <p>Click "Watch Ad and run" (:30 seconds)</p>
-    <img alt="Step 5" class="fit" :src="path+imgGroup+'-step5.png'" />
+    <p>Click "Watch Ad and Run" (:30 seconds)</p>
+    <!--image-->
+    <img alt="Step 5" class="fit" :src="path+group+'-step5.png'" />
     <!--bedrocktogether-->
-    <p v-if="assist == 'BedrockTogether'">
-      <small>(Issues? Send a support ticket:
+    <p v-if="method != ''">
+      <small>Issues? Send a support ticket:
         <a
-          title="BedrockTogether"
+          :title="method"
           target="_blank"
           rel="noopener noreferrer"
-          href="https://discord.gg/mxJvy7PPTM"
-          >BedrockTogether Discord</a>)
+          :href="methodHelp"
+          ><i :class="group"></i></a>
       </small>
     </p>
   </li>
   <li>
     <small class="step">Step 6)</small>
     <p>Leave The App running until you complete the next steps</p>
-    <img alt="Step 6" class="fit" :src="path+imgGroup+'-step6.png'" />
-    <p><small>(The BedrockTogether App is now a Local Network Minecraft "Friend")</small></p>
+    <!--image-->
+    <img alt="Step 6" class="fit" :src="path+group+'-step6.png'" />
+    <p><small>(The {{method}} App is now a Local Network Minecraft "Friend")</small></p>
   </li>
   <li>
     <small class="step">Step 7)</small>
-    <p>Open Minecraft.</p>
-    <p>Select "Friends" tab > Click "BedrockTogether"</p>
-    <img alt="Step 7" class="fit" :src="path+imgGroup+'-step7.png'" />
-    <p><small>BedrockTogether will autoforward you to the Phantom Frames BDS Server.</small></p>
+    <p>Open Minecraft </p>
+    <p>Select "Friends" tab > Click " {{method}}"</p>
+    <!--image-->
+    <img alt="Step 7" class="fit" :src="path+group+'-step7.png'" />
+    <p><small> {{method}} will autoforward you to the Phantom Frames BDS Server </small></p>
   </li>
   <li>
     <small class="step">Final Step)</small>
-    <p>Accept the "Add-on Required" download to join.</p>
+    <p>Click "Download &amp; Join"</p>
+    <!--image common-->
     <img alt="Final Step" class="fit" :src="path+'common-laststep.png'" />
-
-    <p>Congratulations. You now have Phantom Frames.</p>
+    <p>Congratulations! You now have Phantom Frames.</p>
     <p><small>You are logged in as "Guest". As a courtesy to others, please keep visits to under 5 minutes, so others may join this Add-On distribution Minecraft World to download/update.</small></p>
   </li>
 </template>
@@ -85,12 +106,18 @@ export default {
     // e.g. v-if="section == 'console'" keeps that entry hides other that are being checked
     section: String,
     title: String,
-    imgGroup: String,
+    group: String,
+    pros: String,
+    cons: String,
+    Brief: String,
+    storelink: String,
     channel: String, 
     videoId: String, 
     start: String,
-    assist: String,
-    pfdns: String
+    method: String,
+    methodHelp: String,
+    pfdns: String,
+    ip: String
   },
   data() {
     // build image cdn host from vars

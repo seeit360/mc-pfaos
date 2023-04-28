@@ -22,33 +22,47 @@
           </div>
         </section>
 
+        <!--topic CONSOLE -->
         <section id="console" class="nav">
           <ul>
             <li class="header">
               <a target="_self" rel="noopener noreferrer" href="#console" @click="toggle('sub-console')">Console</a>
-                <p id="sub-console" class="toggle legend hide">
+                <legend id="sub-console" class="toggle legend hide">
                   <span class="sub"><a rel="noopener noreferrer" href="#console" @click="toggle('switch')">Switch</a></span>
                   <span class="sub"><a rel="noopener noreferrer" href="#console" @click="toggle('xbox')">Xbox</a></span>
                   <span class="sub"><a rel="noopener noreferrer" href="#console" @click="toggle('playstation')">PlayStation</a></span>
-                </p>
+                </legend>
             </li>
           </ul>
           <section id="topic-console" class="section topic">
             <div class="section-body">
+
+
               <ul id="switch" class="toggle hide">
+              <!--consolesteps switch-->
                 <ConsoleSteps 
                   section='console'
                   title='Switch'
-                  vChannel='Pugmatt'
+                  group='switch'
+
+                  pros='Free, available across all devices.'
+                  cons='Can be confusing if network issues happen. May need tweeks or experimentation with network settings.'
+                  :brief='consoleBrief'
+
+                  channel='Pugmatt'
                   videoId='zalT_oR1nPM'
                   start='0'
-                  imgGroup='switch'
-                  assist='BedrockConnect'
-                  dns='104.238.130.180'
-                  pfdns='000.000.000.000'
+
+                  method='BedrockConnect'
+                  methodAlt='https://github.com/Pugmatt/BedrockConnect'
+                  methodHelp='https://github.com/Pugmatt/BedrockConnect/wiki/Troubleshooting'
+                  methoddns='104.238.130.180'
+
+                  :pfdns='dns'
+                  :ip='ip'
                 />
                 <li>
-                  <!--CssLink-->
+                  <!--CssLink switch-->
                   <div class="css-link">
                     <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
                     <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
@@ -65,20 +79,33 @@
                   </div>
                 </li>
               </ul>
+
+
               <ul id="xbox" class="toggle hide">
+              <!--consolesteps xbox-->
                 <ConsoleSteps 
                   section='console'
                   title='Xbox'
-                  imgGroup='xbox'
+                  group='xbox'
+
+                  pros='Free, available across all devices.'
+                  cons='Can be confusing if network issues happen. May need tweeks or experimentation with network settings.'
+                  :brief='consoleBrief'
+
                   channel='Pugmatt'
                   videoId='g8mHvasVHMs'
                   start='0'
-                  assist='BedrockConnect'
-                  dns='104.238.130.180'
-                  pfdns='000.000.000.000'
+
+                  method='BedrockConnect'
+                  methodAlt='https://github.com/Pugmatt/BedrockConnect'
+                  methodHelp='https://github.com/Pugmatt/BedrockConnect/wiki/Troubleshooting'
+                  methoddns='104.238.130.180'
+
+                  :pfdns='dns'
+                  :ip='ip'
                 />
                 <li>
-                  <!--CssLink-->
+                  <!--CssLink xbox-->
                   <div class="css-link">
                     <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
                     <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
@@ -95,20 +122,33 @@
                   </div>
                 </li>
               </ul>
+
+
               <ul id="playstation" class="toggle hide">
+              <!--consolesteps playstation-->
                 <ConsoleSteps 
                   section='console'
                   title='Playstation'
-                  imgGroup='playstation'
+                  group='playstation'
+
+                  pros='Free, available across all devices.'
+                  cons='Can be confusing if network issues happen. May need tweeks or experimentation with network settings.'
+                  :brief="consoleBrief"
+
                   channel='DonSibleyGames'
                   videoId='0MJVVhDeu2s'
                   start='352'
-                  assist='BedrockConnect'
-                  dns='104.238.130.180'
-                  pfdns='000.000.000.000'
+
+                  method='BedrockConnect'
+                  methodAlt='https://github.com/Pugmatt/BedrockConnect'
+                  methodHelp='https://github.com/Pugmatt/BedrockConnect/wiki/Troubleshooting'
+                  methoddns='104.238.130.180'
+
+                  :pfdns='dns'
+                  :ip='ip'
                 />
                 <li>
-                  <!--CssLink-->
+                  <!--CssLink playstation-->
                   <div class="css-link">
                     <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
                     <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
@@ -125,35 +165,53 @@
                   </div>
                 </li>
               </ul>
+
+
             </div>
           </section>
         </section>
 
+
+        <!--topic MOBILE -->
         <section id="mobile" class="nav">
           <ul>
             <li class="header">
               <a target="_self" rel="noopener noreferrer" href="#mobile" @click="toggle('sub-mobile')">Mobile</a>
-                <p id="sub-mobile" class="toggle legend hide">
+                <legend id="sub-mobile" class="toggle legend hide">
                   <span class="sub"><a rel="noopener noreferrer" href="#mobile" @click="toggle('android')">Android</a></span>
                   <span class="sub"><a rel="noopener noreferrer" href="#mobile" @click="toggle('ios')">iOS</a></span>
-                </p>
+                </legend>
             </li>
           </ul>
           <section id="topic-mobile" class="section topic">
             <div class="section-body">
+
+
               <ul id="android" class="toggle hide">
+              <!--mobilesteps android-->
                 <MobileSteps 
                   section='mobile'
                   title='Android'
-                  imgGroup='android'
+                  group='android'
+
+                  pros='Free, very easy if you have a mobile device, and are in the same WiFi network.'
+                  cons='Connections to servers can be interrupted based on WiFi signal strength.'
+                  :brief='mobileBrief'
+
+                  storelink='https://play.google.com/store/apps/details?id=pl.extollite.bedrocktogetherapp'
+
                   channel=''
                   videoId=''
                   start=''
-                  assist='BedrockTogether'
-                  pfdns='000.000.000.000'
+
+                  method='BedrockTogether'
+                  methodHelp='https://discord.gg/mxJvy7PPTM'
+
+                  :pfdns='dns'
+                  :ip='ip'
                 />
                 <li>
-                  <!--CssLink-->
+                  <!--CssLink android-->
                   <div class="css-link">
                     <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
                     <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
@@ -170,19 +228,33 @@
                   </div>
                 </li>
               </ul>
+
+
               <ul id="ios" class="toggle hide">
+              <!--mobilesteps ios-->
                 <MobileSteps 
                   section='mobile'
                   title='iOS'
-                  imgGroup='ios'
+                  group='ios'
+
+                  pros='Free, Easy if you have a mobile device, and are in the same WiFi network.'
+                  cons='Connections to servers can be interrupted based on WiFi signal strength.'
+                  :brief='mobileBrief'
+
+                  storelink='https://apps.apple.com/us/app/bedrocktogether/id1534593376?platform=iphone'
+
                   channel='CoveWolf'
                   videoId='BzwhrwCp3Io'
                   start='87'
-                  assist='BedrockTogether'
-                  pfdns='000.000.000.000'
+
+                  method='BedrockTogether'
+                  methodHelp='https://discord.gg/mxJvy7PPTM'
+
+                  :pfdns='dns'
+                  :ip='ip'
                 />
                 <li>
-                  <!--CssLink-->
+                  <!--CssLink ios-->
                   <div class="css-link">
                     <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
                     <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
@@ -199,10 +271,13 @@
                   </div>
                 </li>
               </ul>
+
+
             </div>
           </section>
         </section>
 
+        <!--topic PC -->
         <section id="pc" class="nav">
           <ul>
             <li>
@@ -211,11 +286,13 @@
           </ul>
           <section id="topic-pc" class="toggle section topic hide">
             <div class="section-body">
-              <p>PC topics</p>
+
+
               <ul>
+              <!-- other steps-->
                 <li></li>
                 <li>
-                  <!--CssLink-->
+                  <!--CssLink pc-->
                   <div class="css-link">
                     <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
                     <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
@@ -232,10 +309,13 @@
                   </div>
                 </li>
               </ul>
+
+
             </div>
           </section>
         </section>
 
+        <!--topic DISCORD -->
         <section id="discord" class="nav">
           <ul>
             <li>
@@ -244,11 +324,12 @@
           </ul>
           <section id="topic-discord" class="toggle section topic hide">
             <div class="section-body">
-              <p>Discord topics</p>
+
+
               <ul>
                 <li></li>
                 <li>
-                  <!--CssLink-->
+                  <!--CssLink discord-->
                   <div class="css-link">
                     <CssLink :style="classes_1a" :text="title_1a" :url="url_1a" @mouseover="showInfo['1a'] = true" @mouseleave="showInfo['1a'] = false" />
                     <CssLink :style="classes_1b" :text="title_1b" :url="url_1b" @mouseover="showInfo['1b'] = true" @mouseleave="showInfo['1b'] = false" />
@@ -265,6 +346,8 @@
                   </div>
                 </li>
               </ul>
+
+
             </div>
           </section>
         </section>
@@ -277,7 +360,6 @@
           </ul>
           <section id="topic-friends" class="toggle section topic hide">
             <div class="section-body">
-              <p>Friends topics</p>
               <ul>
                 <li></li>
                 <li>
@@ -332,9 +414,17 @@ export default {
     const project = 'mc-pfaos'
     const branch = 'main'
     const dir = 'public'
+
+    const prefix = 'add'
+    
     return {
       // phantom frames version number
       v: '1.0.6',
+      dns: prefix+'.phantomfra.me',
+      ip: '000.000.000.000',
+
+      consoleBrief: "This method will show you how to temporaily change your network settings so you can add (and SAVE) 3rd party servers, including \""+prefix+".phantomfra.me\".",
+      mobileBrief: "This method will show you how to download an app to your mobile device so you can join 3rd party servers, including \""+prefix+".phantomfra.me\".",
       // git project cdn as path - use `path+images/image_name` to get image hosting in html
       path: 'https://cdn.jsdelivr.net/gh/'+git_user+'/'+project+'@'+branch+'/'+dir,
 
