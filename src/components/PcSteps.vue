@@ -36,14 +36,16 @@
     <!--image-->
     <img alt="Step 3" class="fit" :src="path+group+'-step3.png'" />
   </li>
+  <div class="ip-pc fireball"></div>
   <li>
     <small class="step">Step 4)</small>
     <p>Click "Download &amp; Join"</p>
     <!--image common-->
     <img alt="Step 4" class="fit" :src="path+'common-laststep.png'" />
     <p>Congratulations! You now have Phantom Frames.</p>
-    <p><small>You are logged in as "Guest". As a courtesy to others, please keep visits to under 5 minutes, so others may join this Add-On distribution Minecraft World to download/update.</small></p>
+    <p><small>You are logged in as "Guest". As a courtesy, please keep visits to under 5 minutes, so other players may join.</small></p>
   </li>
+  <br />
   <li>
     <small class="step">Optional: Step 5)</small>
     <p>Share "Phantom Frames" Add-On using LAN</p>
@@ -65,7 +67,7 @@
     <img alt="Step 7" class="fit" :src="path+group+'-step7.png'" />
   </li>
   <li>
-    <small class="step">Optional: Step 8)</small>
+    <small class="step"><span class="bold">Required</span>: Step 8)</small>
     <p>Experiments > Turn On Experiments Anyway > </p>
     <p>Holiday Creator Features > On</p>
     <!--image-->

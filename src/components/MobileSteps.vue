@@ -63,6 +63,7 @@
     <!--image-->
     <img alt="Step 4" class="fit" :src="path+'mobile-step4.png'" />
   </li>
+  <div class="ip-mobile fireball"></div>
   <li>
     <small class="step">Step 5)</small>
     <p>Click "Watch Ad and Run" (:30 seconds)</p>
@@ -86,7 +87,7 @@
     <p>Approve any access to the local network.</p>
     <!--image-->
     <img alt="Step 6" class="fit" :src="path+'mobile-step6.png'" />
-    <p><small>The {{method}} App is now a Local Network Minecraft "Friend"</small></p>
+    <p><small>The {{method}} App is now a "LAN Game" using the Server IP you entered</small></p>
   </li>
   <li>
     <small class="step">Step 7)</small>
@@ -102,7 +103,7 @@
     <!--image common-->
     <img alt="Final Step" class="fit" :src="path+'common-laststep.png'" />
     <p>Congratulations! You now have Phantom Frames.</p>
-    <p><small>You are logged in as "Guest". As a courtesy to others, please keep visits to under 5 minutes, so others may join this Add-On distribution Minecraft World to download/update.</small></p>
+    <p><small>You are logged in as "Guest". As a courtesy, please keep visits to under 5 minutes, so other players may join.</small></p>
   </li>
 </template>
 <script>

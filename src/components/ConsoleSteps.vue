@@ -148,16 +148,16 @@
   </li>
   <li>
     <small class="step">Step 9)</small>
-    <p>Server Address: "{{dns}}" <small>~or~</small></p>
-    <p style="padding-left:10rem">"{{ip}}" </p>
+    <p>Server Address: "{{dns}}"</p>
     <p>Server Port: "19132" </p>
     <p><small>(This is the Phantom Frames Distribution BDS Server)</small></p>
     <!--image common-->
     <img alt="Step 9" class="fit" :src="path+'console-step9.png'" />
   </li>
+  <div class="ip-console fireball"></div>
   <li>
     <small class="step">Step 10)</small>
-    <p>Optional: Toggle "Add to server list" to "On" for update visits </p>
+    <p>Optional: Toggle "Add to server list" > On <small>(for future updating)</small> </p>
     <p>Click "Submit" </p>
     <!--image common-->
     <img alt="Step 10" class="fit" :src="path+'console-step10.png'" />
@@ -168,7 +168,7 @@
     <!--image common-->
     <img alt="Final Step" class="fit" :src="path+'common-laststep.png'" />
     <p>Congratulations! You now have Phantom Frames.</p>
-    <p><small>You are logged in as "Guest". As a courtesy to others, please keep visits to under 5 minutes, so others may join this Add-On distribution Minecraft World to download/update.</small></p>
+    <p><small>You are logged in as "Guest". As a courtesy, please keep visits to under 5 minutes, so other players may join.</small></p>
   </li>
 </template>
 <script>
