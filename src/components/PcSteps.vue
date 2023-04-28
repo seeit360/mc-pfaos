@@ -6,15 +6,14 @@
     <div class="fireball"></div>
   </div>
   <p class="title">{{ title }} Step-by-step</p>
+  <!--description-->
+  <div class="description">
+    <p>{{brief}}</p>
+  </div>
   <!--bedrocktogether-->
   <p v-if="method != ''"><small><span class="bold">Method</span>: {{method}}</small></p>
   <p v-if="method != ''"><small><span class="bold">Pros</span>: {{pros}}</small></p>
   <p v-if="method != ''"><small><span class="bold">Cons</span>: {{cons}}</small></p>
-  <!--description-->
-    <!--description-->
-  <div class="description">
-    <p>{{brief}}</p>
-  </div>
   
   <li>
     <small class="step">Step 1)</small>
@@ -46,38 +45,38 @@
     <p><small>You are logged in as "Guest". As a courtesy to others, please keep visits to under 5 minutes, so others may join this Add-On distribution Minecraft World to download/update.</small></p>
   </li>
   <li>
-    <small class="step">Step 5)</small>
-    <p>Optional: Activate the "Phantom Frames" Add-On on a new world</p>
-    <p>Click "Create New World"</p>
-    <p>Scroll to "Multiplayer" > Toggle Visible to LAN Players</p>
+    <small class="step">Optional: Step 5)</small>
+    <p>Share "Phantom Frames" Add-On using LAN</p>
+    <p>Create New World</p>
+    <p>Multiplayer > Visible to LAN Players > On</p>
     <!--image-->
     <img alt="Step 5" class="fit" :src="path+group+'-step5.png'" />
   </li>
   <li>
-    <small class="step">Step 5a)</small>
-    <p>Select "Behavior Packs" and activate "Phantom Frames" on your world</p>
+    <small class="step">Optional: Step 6)</small>
+    <p>Behavior Packs > Add [+] "Phantom Frames"</p>
     <!--image-->
-    <img alt="Step 5a" class="fit" :src="path+group+'-step6.png'" />
+    <img alt="Step 6" class="fit" :src="path+group+'-step6.png'" />
   </li>
     <li>
-    <small class="step">Step 5b)</small>
-    <p>Select "Resource Packs" > Toggle "Shared Packs" > "On"</p>
+    <small class="step">Optional: Step 7)</small>
+    <p>Resource Packs > Shared Packs > On</p>
     <!--image-->
-    <img alt="Step 5b" class="fit" :src="path+group+'-step7.png'" />
+    <img alt="Step 7" class="fit" :src="path+group+'-step7.png'" />
   </li>
   <li>
-    <small class="step">Step 5c)</small>
-    <p>Select "Experiments" > "Turn On Experiments Anyway" > </p>
-    <p>Toggle "Holiday Creator Features" > "On"</p>
+    <small class="step">Optional: Step 8)</small>
+    <p>Experiments > Turn On Experiments Anyway > </p>
+    <p>Holiday Creator Features > On</p>
     <!--image-->
-    <img alt="Step 5c" class="fit" :src="path+group+'-step8.png'" />
+    <img alt="Step 8" class="fit" :src="path+group+'-step8.png'" />
   </li>
   <li>
-    <small class="step">Step 5d)</small>
-    <p>Open any other instance of Minecraft in the same LAN</p>
-    <p>Go to the Friends tab, scroll to LAN game and click to join</p>
+    <small class="step">Optional: Step 9)</small>
+    <p>Open Minecraft <small>(in the same Wifi / LAN as PC)</small></p>
+    <p>Friends tab > LAN Games > "Your New World" > Join</p>
     <!--image-->
-    <img alt="Step 5d" class="fit" :src="path+group+'-step9.png'" />
+    <img alt="Step 9" class="fit" :src="path+group+'-step9.png'" />
   </li>
   <li>
     <small class="step">Final Step)</small>

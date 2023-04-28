@@ -6,12 +6,7 @@
     <div class="fireball"></div>
   </div>
   <p class="title">{{ title }} Step-by-step</p>
-  <!--bedrocktogether-->
-  <p v-if="method != ''"><small><span class="bold">Method</span>: {{method}}</small></p>
-  <p v-if="method != ''"><small><span class="bold">Pros</span>: {{pros}}</small></p>
-  <p v-if="method != ''"><small><span class="bold">Cons</span>: {{cons}}</small></p>
   <!--description-->
-    <!--description-->
   <div class="description">
     <p>{{brief}}</p>
     <br />
@@ -26,6 +21,10 @@
       </a>
     </p>
   </div>
+  <!--bedrocktogether-->
+  <p v-if="method != ''"><small><span class="bold">Method</span>: {{method}}</small></p>
+  <p v-if="method != ''"><small><span class="bold">Pros</span>: {{pros}}</small></p>
+  <p v-if="method != ''"><small><span class="bold">Cons</span>: {{cons}}</small></p>
   
   <li>
     <small class="step">Step 1)</small>

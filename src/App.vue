@@ -26,7 +26,7 @@
         <section id="console" class="nav">
           <ul>
             <li class="header">
-              <a target="_self" rel="noopener noreferrer" href="#console" @click="toggle('sub-console')">Console Settings</a>
+              <a target="_self" rel="noopener noreferrer" href="#console" @click="toggle('sub-console')">Console</a>
                 <legend id="sub-console" class="toggle legend hide">
                   <span class="sub"><a rel="noopener noreferrer" href="#console" @click="toggle('switch')">Switch</a></span>
                   <span class="sub"><a rel="noopener noreferrer" href="#console" @click="toggle('xbox')">Xbox</a></span>
@@ -281,7 +281,7 @@
         <section id="pc" class="nav">
           <ul>
             <li>
-              <a target="_self" rel="noopener noreferrer" href="#pc" @click="toggle('topic-pc')">PC via LAN</a>
+              <a target="_self" rel="noopener noreferrer" href="#pc" @click="toggle('topic-pc')">PC</a>
             </li>
           </ul>
           <section id="topic-pc" class="toggle section topic hide">
@@ -403,7 +403,7 @@
         </section>
 
         <div class="section container">
-          <img class="logo" alt="Logo" :src="path+'/images/cropped_logo.png'" />
+          <img class="logo" alt="Logo" :src="path+'/img/cropped_logo.png'" />
         </div>
 
       </div>
@@ -445,7 +445,7 @@ export default {
 
       consoleBrief: 'This method will show you how to temporaily change your network settings so you can add (and SAVE) 3rd party servers, including \"'+prefix+'.phantomfra.me\".',
       mobileBrief: 'This method will show you how to download an app to your mobile device so you can join 3rd party servers, including \"'+prefix+'.phantomfra.me\".',
-      pcBrief: 'This method will show you how to join 3rd party servers, including \"'+prefix+'.phantomfra.me\". then share your gameplay with other local devices.',
+      pcBrief: 'This method will show you how to join 3rd party servers, including \"'+prefix+'.phantomfra.me\". and optionally share add-on\'s with other local devices.',
       // git project cdn as path - use `path+images/image_name` to get image hosting in html
       path: 'https://cdn.jsdelivr.net/gh/'+git_user+'/'+project+'@'+branch+'/'+dir,
 
