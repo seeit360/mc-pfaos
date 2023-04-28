@@ -26,7 +26,7 @@
         <section id="console" class="nav">
           <ul>
             <li class="header">
-              <a target="_self" rel="noopener noreferrer" href="#console" @click="toggle('sub-console')">Console</a>
+              <a target="_self" rel="noopener noreferrer" href="#console" @click="toggle('sub-console')">Console Settings</a>
                 <legend id="sub-console" class="toggle legend hide">
                   <span class="sub"><a rel="noopener noreferrer" href="#console" @click="toggle('switch')">Switch</a></span>
                   <span class="sub"><a rel="noopener noreferrer" href="#console" @click="toggle('xbox')">Xbox</a></span>
@@ -176,7 +176,7 @@
         <section id="mobile" class="nav">
           <ul>
             <li class="header">
-              <a target="_self" rel="noopener noreferrer" href="#mobile" @click="toggle('sub-mobile')">Mobile</a>
+              <a target="_self" rel="noopener noreferrer" href="#mobile" @click="toggle('sub-mobile')">Mobile App</a>
                 <legend id="sub-mobile" class="toggle legend hide">
                   <span class="sub"><a rel="noopener noreferrer" href="#mobile" @click="toggle('android')">Android</a></span>
                   <span class="sub"><a rel="noopener noreferrer" href="#mobile" @click="toggle('ios')">iOS</a></span>
@@ -281,7 +281,7 @@
         <section id="pc" class="nav">
           <ul>
             <li>
-              <a target="_self" rel="noopener noreferrer" href="#pc" @click="toggle('topic-pc')">PC</a>
+              <a target="_self" rel="noopener noreferrer" href="#pc" @click="toggle('topic-pc')">PC via LAN</a>
             </li>
           </ul>
           <section id="topic-pc" class="toggle section topic hide">
@@ -338,7 +338,7 @@
         <section id="discord" class="nav">
           <ul>
             <li>
-              <a target="_self" rel="noopener noreferrer" href="#discord" @click="toggle('topic-discord')">Discord</a>
+              <a target="_self" rel="noopener noreferrer" href="#discord" @click="toggle('topic-discord')">Discord Bot</a>
             </li>
           </ul>
           <section id="topic-discord" class="toggle section topic hide">
@@ -436,8 +436,8 @@ export default {
     const project = 'mc-pfaos'
     const branch = 'main'
     const dir = 'public'
-
-    const prefix = 'add'
+    //update when site goes live
+    const prefix = 'dev'
     
     return {
       // phantom frames version number

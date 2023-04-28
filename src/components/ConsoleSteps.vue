@@ -57,7 +57,7 @@
     <small class="step">Step 4)</small>
     <!--switch,xbox-->
     <p v-if="title == 'Switch' || title == 'Xbox'">
-      Set the Primary <span v-if="title == 'Xbox'">IPv4 </span>DNS to "{{methoddns}}"  <small>({{method}} DNS}</small>
+      Set the Primary <span v-if="title == 'Xbox'">IPv4 </span>DNS to "{{methoddns}}"  <small>({{method}} DNS)</small>
     </p>
     <p v-if="title == 'Switch' || title == 'Xbox'">
       Set the Secondary <span v-if="title == 'Xbox'">IPv4 </span>DNS to "8.8.8.8". <small>(Google DNS)</small>
@@ -67,19 +67,6 @@
     <p v-if="title == 'Playstation'">DNS Settings > Manual</p>
     <!--image-->
     <img alt="Step 4" class="fit" :src="path+group+'-step4.png'" />
-    <!--bedrockconnect switch xbox-->
-    <p v-if="method != '' && title != 'Playstation'">
-      <small>Issues? Other {{method}} DNS listings can be found here:
-        <a
-          :title="method"
-          target="_blank"
-          rel="noopener noreferrer"
-          :href="methodAlt"
-          >
-          <i :class="group"></i>
-        </a>
-      </small>
-    </p>
   </li>
   <li>
     <small class="step">Step 5)</small>
@@ -99,6 +86,19 @@
     <p v-if="title == 'Playstation'">MTU > Automatic</p>
     <p v-if="title == 'Playstation'">Proxy Server > Do Not Use</p>
     <p v-if="title == 'Playstation'">Test Internet Connection</p>
+    <!--bedrockconnect switch xbox-->
+    <p v-if="method != '' && title != 'Playstation'">
+      <small>Issues? Other {{method}} DNS listings can be found here:
+        <a
+          :title="method"
+          target="_blank"
+          rel="noopener noreferrer"
+          :href="methodAlt"
+          >
+          <i :class="group"></i>
+        </a>
+      </small>
+    </p>
     <!--bedrockconnect playstation-->
     <p v-if="method != '' && title == 'Playstation'">
       <small>Issues? Other {{method}} DNS listings can be found here:
@@ -133,7 +133,7 @@
     <img alt="Step 8" class="fit" :src="path+'console-step8.png'" />
     <!--bedrockconnect wiki common-->
     <p v-if="method != ''">
-      <small>Issues? Read Wiki:
+      <small>Issues? Read the {{method}} Wiki:
         <a 
         :title="method"
         target="_blank" 

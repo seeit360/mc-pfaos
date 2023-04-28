@@ -47,17 +47,37 @@
   </li>
   <li>
     <small class="step">Step 5)</small>
-    <p>Open a new Minecraft World and activate the "Phantom Frames" Add-On</p>
-    <p>Require others to download the add-on befor joining</p>
+    <p>Optional: Activate the "Phantom Frames" Add-On on a new world</p>
+    <p>Click "Create New World"</p>
+    <p>Scroll to "Multiplayer" > Toggle Visible to LAN Players</p>
     <!--image-->
     <img alt="Step 5" class="fit" :src="path+group+'-step5.png'" />
   </li>
   <li>
-    <small class="step">Step 6)</small>
-    <p>Open any other instance of Minecraft in the same network</p>
+    <small class="step">Step 5a)</small>
+    <p>Select "Behavior Packs" and activate "Phantom Frames" on your world</p>
+    <!--image-->
+    <img alt="Step 5a" class="fit" :src="path+group+'-step6.png'" />
+  </li>
+    <li>
+    <small class="step">Step 5b)</small>
+    <p>Select "Resource Packs" > Toggle "Shared Packs" > "On"</p>
+    <!--image-->
+    <img alt="Step 5b" class="fit" :src="path+group+'-step7.png'" />
+  </li>
+  <li>
+    <small class="step">Step 5c)</small>
+    <p>Select "Experiments" > "Turn On Experiments Anyway" > </p>
+    <p>Toggle "Holiday Creator Features" > "On"</p>
+    <!--image-->
+    <img alt="Step 5c" class="fit" :src="path+group+'-step8.png'" />
+  </li>
+  <li>
+    <small class="step">Step 5d)</small>
+    <p>Open any other instance of Minecraft in the same LAN</p>
     <p>Go to the Friends tab, scroll to LAN game and click to join</p>
     <!--image-->
-    <img alt="Step 6" class="fit" :src="path+group+'-step6.png'" />
+    <img alt="Step 5d" class="fit" :src="path+group+'-step9.png'" />
   </li>
   <li>
     <small class="step">Final Step)</small>
