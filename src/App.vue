@@ -297,8 +297,6 @@
                   cons='Requires separate purchases for each platform of Minecraft Bedrock.'
                   :brief='pcBrief'
 
-                  storelink=''
-
                   channel='PebbleHost'
                   videoId='WJSq0BQBU9E'
                   start='0'

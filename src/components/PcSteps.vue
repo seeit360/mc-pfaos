@@ -104,7 +104,6 @@ export default {
     pros: String,
     cons: String,
     brief: String,
-    storelink: String,
     channel: String, 
     videoId: String, 
     start: String,
