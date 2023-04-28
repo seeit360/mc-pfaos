@@ -5,19 +5,15 @@
     </div>
     <div class="fireball"></div>
   </div>
-  <li>
-  </li>
-  <li>
-    <p class="title">{{ title }} Step-by-step</p>
-    <!--bedrockconnect-->
-    <p v-if="method != ''"><small>Method: {{method}}</small></p>
-    <p v-if="method != ''"><small>Pros: {{pros}}</small></p>
-    <p v-if="method != ''"><small>Cons: {{cons}}</small></p>
-    <!--description-->
-    <div>
-      <p>{{brief}}</p>
-    </div>
-  </li>
+  <p class="title">{{ title }} Step-by-step</p>
+  <!--bedrockconnect-->
+  <p v-if="method != ''"><small><span class="bold">Method</span>: {{method}}</small></p>
+  <p v-if="method != ''"><small><span class="bold">Pros</span>: {{pros}}</small></p>
+  <p v-if="method != ''"><small><span class="bold">Cons</span>: {{cons}}</small></p>
+  <!--description-->
+  <div class="description">
+    <p>{{brief}}</p>
+  </div>
   <li>
     <small class="step">Step 1)</small>
     <!--switch-->

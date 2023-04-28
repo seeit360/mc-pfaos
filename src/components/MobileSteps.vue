@@ -5,27 +5,35 @@
     </div>
     <div class="fireball"></div>
   </div>
-  <li>
-    <p class="title">{{ title }} Step-by-step</p>
-    <!--bedrocktogether-->
-    <p v-if="method != ''"><small>Method: {{method}}</small></p>
-    <p v-if="method != ''"><small>Pros: {{pros}}</small></p>
-    <p v-if="method != ''"><small>Cons: {{cons}}</small></p>
-    <!--description-->
-    <div>
-      <p>{{brief}}</p>
-    </div>
-  </li>
-  <li>
-    <small class="step">Step 1)</small>
-    <p>Go to the store on your device > 
-      <a 
+  <p class="title">{{ title }} Step-by-step</p>
+  <!--bedrocktogether-->
+  <p v-if="method != ''"><small><span class="bold">Method</span>: {{method}}</small></p>
+  <p v-if="method != ''"><small><span class="bold">Pros</span>: {{pros}}</small></p>
+  <p v-if="method != ''"><small><span class="bold">Cons</span>: {{cons}}</small></p>
+  <!--description-->
+  <div class="description">
+    <p class="store">{{brief}} <a
+        title="Open App store" 
         target="_blank"
         rel="noopener noreferrer" 
         :href="storelink"
       >
-        <i :class="group"></i>
+        <i class="icon" :class="group"></i>
       </a>
+    </p>
+  </div>
+  
+  <li>
+    <small class="step">Step 1)</small>
+    <p>Go to the store on your device > 
+    <a
+          title="Open App store" 
+          target="_blank"
+          rel="noopener noreferrer" 
+          :href="storelink"
+        >
+          <i :class="group"></i>
+        </a>
     </p>
     <!--image-->
     <img alt="Step 1" class="fit" :src="path+group+'-step1.png'" />
@@ -59,7 +67,7 @@
     <img alt="Step 5" class="fit" :src="path+group+'-step5.png'" />
     <!--bedrocktogether-->
     <p v-if="method != ''">
-      <small>Issues? Send a support ticket:
+      <small>Issues? Send a {{method}} support ticket:
         <a
           :title="method"
           target="_blank"
@@ -74,7 +82,7 @@
     <p>Leave The App running until you complete the next steps</p>
     <!--image-->
     <img alt="Step 6" class="fit" :src="path+group+'-step6.png'" />
-    <p><small>(The {{method}} App is now a Local Network Minecraft "Friend")</small></p>
+    <p><small>The {{method}} App is now a Local Network Minecraft "Friend"</small></p>
   </li>
   <li>
     <small class="step">Step 7)</small>
