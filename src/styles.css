@@ -797,6 +797,10 @@
   .sub a:hover{
     color:#111
   }
+  .title{
+    font-family: 'Press Start 2P';
+    font-size: 1.2rem
+  }
   .step {
     margin-left:10px
   }

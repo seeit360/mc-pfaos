@@ -36,7 +36,7 @@
           <section id="topic-console" class="section topic">
             <div class="section-body">
               <ul id="switch" class="toggle hide">
-                <Steps 
+                <ConsoleSteps 
                   section='console'
                   title='Switch'
                   hasVideo='true'
@@ -67,7 +67,7 @@
                 </li>
               </ul>
               <ul id="xbox" class="toggle hide">
-                <Steps 
+                <ConsoleSteps 
                   section='console'
                   title='Xbox'
                   imgGroup='xbox'
@@ -98,7 +98,7 @@
                 </li>
               </ul>
               <ul id="playstation" class="toggle hide">
-                <Steps 
+                <ConsoleSteps 
                   section='console'
                   title='Playstation'
                   imgGroup='playstation'
@@ -132,21 +132,20 @@
           </section>
         </section>
 
-
         <section id="mobile" class="nav">
           <ul>
             <li class="header">
               <a target="_self" rel="noopener noreferrer" href="#mobile" @click="toggle('sub-mobile')">Mobile</a>
                 <p id="sub-mobile" class="toggle legend hide">
                   <span class="sub"><a rel="noopener noreferrer" href="#mobile" @click="toggle('android')">Android</a></span>
-                  <span class="sub"><a rel="noopener noreferrer" href="#mobile" @click="toggle('iphone')">iPhone</a></span>
+                  <span class="sub"><a rel="noopener noreferrer" href="#mobile" @click="toggle('ios')">iOS</a></span>
                 </p>
             </li>
           </ul>
           <section id="topic-mobile" class="section topic">
             <div class="section-body">
               <ul id="android" class="toggle hide">
-                <Steps 
+                <MobileSteps 
                   section='mobile'
                   title='Android'
                   hasVideo='false'
@@ -154,7 +153,7 @@
                   channel=''
                   videoId=''
                   start=''
-                  assist=''
+                  assist='BedrockTogether'
                   dns='104.238.130.180'
                   pfdns='000.000.000.000'
                 />
@@ -176,16 +175,16 @@
                   </div>
                 </li>
               </ul>
-              <ul id="iphone" class="toggle hide">
-                <Steps 
+              <ul id="ios" class="toggle hide">
+                <MobileSteps 
                   section='mobile'
-                  title='iPhone'
-                  hasVideo='false'
-                  imgGroup='iphone'
-                  channel=''
-                  videoId=''
-                  start=''
-                  assist=''
+                  title='iOS'
+                  hasVideo='true'
+                  imgGroup='ios'
+                  channel='CoveWolf'
+                  videoId='BzwhrwCp3Io'
+                  start='87'
+                  assist='BedrockTogether'
                   dns='104.238.130.180'
                   pfdns='000.000.000.000'
                 />
@@ -244,7 +243,6 @@
           </section>
         </section>
 
-
         <section id="discord" class="nav">
           <ul>
             <li>
@@ -277,7 +275,6 @@
             </div>
           </section>
         </section>
-
 
         <section id="friends" class="nav">
           <ul>
@@ -312,7 +309,6 @@
           </section>
         </section>
 
-
         <div class="section container">
           <img class="logo" alt="Logo" :src="path+'/images/cropped_logo.png'" />
         </div>
@@ -326,14 +322,16 @@
 
 import Version from './components/Version.vue';
 import CssLink from './components/CssLink.vue';
-import Steps from './components/Steps.vue';
+import ConsoleSteps from './components/ConsoleSteps.vue';
+import MobileSteps from './components/MobileSteps.vue';
 
 export default {
   name: 'App',
   components: {
     Version,
     CssLink,
-    Steps
+    ConsoleSteps,
+    MobileSteps
   },
   data(){
     // build image cdn host from vars
