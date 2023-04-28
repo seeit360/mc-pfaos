@@ -286,11 +286,30 @@
           </ul>
           <section id="topic-pc" class="toggle section topic hide">
             <div class="section-body">
-
-
               <ul>
-              <!-- other steps-->
-                <li></li>
+              <!--pcsteps-->
+                <PcSteps 
+                  section='pc'
+                  title='PC'
+                  group='pc'
+
+                  pros='Easy, built into Minecraft menu for both PC and mobile platforms.'
+                  cons='Requires separate purchases for each platform of Minecraft Bedrock.'
+                  :brief='pcBrief'
+
+                  storelink=''
+
+                  channel='PebbleHost'
+                  videoId='WJSq0BQBU9E'
+                  start='0'
+
+                  method='Minecraft Add Server'
+                  methodHelp=''
+
+                  :dns='dns'
+                  :ip='ip'
+                />
+
                 <li>
                   <!--CssLink pc-->
                   <div class="css-link">
@@ -399,6 +418,7 @@ import Version from './components/Version.vue';
 import CssLink from './components/CssLink.vue';
 import ConsoleSteps from './components/ConsoleSteps.vue';
 import MobileSteps from './components/MobileSteps.vue';
+import PcSteps from './components/MobileSteps.vue';
 
 export default {
   name: 'App',
@@ -406,7 +426,8 @@ export default {
     Version,
     CssLink,
     ConsoleSteps,
-    MobileSteps
+    MobileSteps,
+    PcSteps
   },
   data(){
     // build image cdn host from vars
@@ -425,6 +446,7 @@ export default {
 
       consoleBrief: 'This method will show you how to temporaily change your network settings so you can add (and SAVE) 3rd party servers, including \"'+prefix+'.phantomfra.me\".',
       mobileBrief: 'This method will show you how to download an app to your mobile device so you can join 3rd party servers, including \"'+prefix+'.phantomfra.me\".',
+      pcBrief: 'This method will show you how to join 3rd party servers, including \"'+prefix+'.phantomfra.me\". then share your gameplay with other local devices.',
       // git project cdn as path - use `path+images/image_name` to get image hosting in html
       path: 'https://cdn.jsdelivr.net/gh/'+git_user+'/'+project+'@'+branch+'/'+dir,
 

@@ -14,103 +14,64 @@
     <!--description-->
   <div class="description">
     <p>{{brief}}</p>
-    <br />
-    <p class="store">
-      <a
-        title="Open App store" 
-        target="_blank"
-        rel="noopener noreferrer" 
-        :href="storelink"
-      >
-        <i class="icon" :class="group"></i>
-      </a>
-    </p>
   </div>
   
   <li>
     <small class="step">Step 1)</small>
-    <p>Go to the store on your device > 
-    <a
-          title="Open App store" 
-          target="_blank"
-          rel="noopener noreferrer" 
-          :href="storelink"
-        >
-          <i :class="group"></i>
-        </a>
-    </p>
+    <p>Open Minecraft on your {{title}}</p>
     <!--image-->
     <img alt="Step 1" class="fit" :src="path+group+'-step1.png'" />
   </li>
   <li>
     <small class="step">Step 2)</small>
-    <p>Search for the "{{method}}" App.</p>
+    <p>Servers tab > Add Server</p>
     <!--image-->
     <img alt="Step 2" class="fit" :src="path+group+'-step2.png'" />
   </li>
   <li>
     <small class="step">Step 3)</small>
-    <p>Install the Free version (ad supported)</p>
+    <p>Server Name: "{{dns}}"</p>
+    <p>Server IP: "{{ip}}" </p>
+    <p>Server Port: "19132" </p>
+    <p><small>(This is the Phantom Frames Distribution BDS Server)</small></p>
     <!--image-->
     <img alt="Step 3" class="fit" :src="path+group+'-step3.png'" />
   </li>
   <li>
-    <small class="step">Step 4)</small>
-    <p>Open the "{{method}}" App</p>
-    <p>IP: "{{dns}}" <small>~or~</small></p>
-    <p class="pad-left">"{{ip}}" </p>
-    <p>Port: "19132" </p>
-    <p><small>(This is the Phantom Frames Distribution BDS Server)</small></p>
-    <!--image-->
-    <img alt="Step 4" class="fit" :src="path+'mobile-step4.png'" />
+    <small class="step">4)</small>
+    <p>Click "Download &amp; Join"</p>
+    <!--image common-->
+    <img alt="Step 4" class="fit" :src="path+'common-laststep.png'" />
+    <p>Congratulations! You now have Phantom Frames.</p>
+    <p><small>You are logged in as "Guest". As a courtesy to others, please keep visits to under 5 minutes, so others may join this Add-On distribution Minecraft World to download/update.</small></p>
   </li>
   <li>
-    <small class="step">Step 5)</small>
-    <p>Click "Watch Ad and Run" (:30 seconds)</p>
+    <small class="step">5)</small>
+    <p>Open a new Minecraft World and activate the "Phantom Frames" Add-On</p>
+    <p>Require others to download the add-on befor joining</p>
     <!--image-->
-    <img alt="Step 5" class="fit" :src="path+'mobile-step5.png'" />
-    <!--bedrocktogether-->
-    <p v-if="method != ''">
-      <small>Issues? Send {{method}} a support ticket:
-        <a
-          :title="method"
-          target="_blank"
-          rel="noopener noreferrer"
-          :href="methodHelp"
-          ><i :class="group"></i></a>
-      </small>
-    </p>
+    <img alt="Step 5" class="fit" :src="path+group+'-step5.png'" />
   </li>
   <li>
-    <small class="step">Step 6)</small>
-    <p>Leave the {{method}} App running until you complete all steps</p>
-    <p>Approve any access to the local network.</p>
+    <small class="step">6)</small>
+    <p>Open any other instance of Minecraft in the same network</p>
+    <p>Go to the Friends tab, scroll to LAN game and click to join</p>
     <!--image-->
-    <img alt="Step 6" class="fit" :src="path+'mobile-step6.png'" />
-    <p><small>The {{method}} App is now a Local Network Minecraft "Friend"</small></p>
-  </li>
-  <li>
-    <small class="step">Step 7)</small>
-    <p>Open Minecraft </p>
-    <p>Select "Friends" tab > Click "{{method}}"</p>
-    <!--image-->
-    <img alt="Step 7" class="fit" :src="path+'mobile-step7.png'" />
-    <p><small> {{method}} will autoforward you to the Phantom Frames BDS Server </small></p>
+    <img alt="Step 6" class="fit" :src="path+group+'-step6.png'" />
   </li>
   <li>
     <small class="step">Final Step)</small>
     <p>Click "Download &amp; Join"</p>
     <!--image common-->
     <img alt="Final Step" class="fit" :src="path+'common-laststep.png'" />
-    <p>Congratulations! You now have Phantom Frames.</p>
-    <p><small>You are logged in as "Guest". As a courtesy to others, please keep visits to under 5 minutes, so others may join this Add-On distribution Minecraft World to download/update.</small></p>
+    <p>Congratulations! You now have Phantom Frames on another device.</p>
   </li>
 </template>
 <script>
 import YouTube from './YouTube.vue';
 export default {
 
-  name: 'MobileSteps',
+  name: 'PcSteps',
   components:{
     YouTube
   },
