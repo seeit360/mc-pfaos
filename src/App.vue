@@ -371,6 +371,7 @@
           </section>
         </section>
 
+        <!--topic FRIENDS -->
         <section id="friends" class="nav">
           <ul>
             <li>
@@ -418,7 +419,7 @@ import Version from './components/Version.vue';
 import CssLink from './components/CssLink.vue';
 import ConsoleSteps from './components/ConsoleSteps.vue';
 import MobileSteps from './components/MobileSteps.vue';
-import PcSteps from './components/MobileSteps.vue';
+import PcSteps from './components/PcSteps.vue';
 
 export default {
   name: 'App',

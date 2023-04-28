@@ -18,7 +18,7 @@
   
   <li>
     <small class="step">Step 1)</small>
-    <p>Open Minecraft on your {{title}}</p>
+    <p>Open "Minecraft For Windows" on your {{title}}</p>
     <!--image-->
     <img alt="Step 1" class="fit" :src="path+group+'-step1.png'" />
   </li>
@@ -38,7 +38,7 @@
     <img alt="Step 3" class="fit" :src="path+group+'-step3.png'" />
   </li>
   <li>
-    <small class="step">4)</small>
+    <small class="step">Step 4)</small>
     <p>Click "Download &amp; Join"</p>
     <!--image common-->
     <img alt="Step 4" class="fit" :src="path+'common-laststep.png'" />
@@ -46,14 +46,14 @@
     <p><small>You are logged in as "Guest". As a courtesy to others, please keep visits to under 5 minutes, so others may join this Add-On distribution Minecraft World to download/update.</small></p>
   </li>
   <li>
-    <small class="step">5)</small>
+    <small class="step">Step 5)</small>
     <p>Open a new Minecraft World and activate the "Phantom Frames" Add-On</p>
     <p>Require others to download the add-on befor joining</p>
     <!--image-->
     <img alt="Step 5" class="fit" :src="path+group+'-step5.png'" />
   </li>
   <li>
-    <small class="step">6)</small>
+    <small class="step">Step 6)</small>
     <p>Open any other instance of Minecraft in the same network</p>
     <p>Go to the Friends tab, scroll to LAN game and click to join</p>
     <!--image-->
