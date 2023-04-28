@@ -147,8 +147,8 @@
   </li>
   <li>
     <small class="step">Step 9)</small>
-    <p>Server Address: "{{pfdns}}" <small>~or~</small></p>
-    <p class="pad-left">"{{ip}}" </p>
+    <p>Server Address: "{{dns}}" <small>~or~</small></p>
+    <p style="padding-left:10rem">"{{ip}}" </p>
     <p>Server Port: "19132" </p>
     <p><small>(This is the Phantom Frames Distribution BDS Server)</small></p>
     <!--image common-->
@@ -199,7 +199,7 @@ export default {
     methodAlt: String,
     methoddns: String,
 
-    pfdns: String,
+    dns: String,
     ip: String,
   },
   data() {

@@ -45,8 +45,8 @@
                   title='Switch'
                   group='switch'
 
-                  pros='Free, available across all devices.'
-                  cons='Can be confusing if network issues happen. May need tweeks or experimentation with network settings.'
+                  pros='Free (donations), available to nearly all devices.'
+                  cons='Can be confusing if network issues happen. May need tweeks or experimentation.'
                   :brief='consoleBrief'
 
                   channel='Pugmatt'
@@ -58,7 +58,7 @@
                   methodHelp='https://github.com/Pugmatt/BedrockConnect/wiki/Troubleshooting'
                   methoddns='104.238.130.180'
 
-                  :pfdns='dns'
+                  :dns='dns'
                   :ip='ip'
                 />
                 <li>
@@ -89,7 +89,7 @@
                   group='xbox'
 
                   pros='Free, available across all devices.'
-                  cons='Can be confusing if network issues happen. May need tweeks or experimentation with network settings.'
+                  cons='Can be confusing if network issues happen. May need tweeks or experimentation.'
                   :brief='consoleBrief'
 
                   channel='Pugmatt'
@@ -101,7 +101,7 @@
                   methodHelp='https://github.com/Pugmatt/BedrockConnect/wiki/Troubleshooting'
                   methoddns='104.238.130.180'
 
-                  :pfdns='dns'
+                  :dns='dns'
                   :ip='ip'
                 />
                 <li>
@@ -132,7 +132,7 @@
                   group='playstation'
 
                   pros='Free, available across all devices.'
-                  cons='Can be confusing if network issues happen. May need tweeks or experimentation with network settings.'
+                  cons='Can be confusing if network issues happen. May need tweeks or experimentation.'
                   :brief="consoleBrief"
 
                   channel='DonSibleyGames'
@@ -144,7 +144,7 @@
                   methodHelp='https://github.com/Pugmatt/BedrockConnect/wiki/Troubleshooting'
                   methoddns='104.238.130.180'
 
-                  :pfdns='dns'
+                  :dns='dns'
                   :ip='ip'
                 />
                 <li>
@@ -207,7 +207,7 @@
                   method='BedrockTogether'
                   methodHelp='https://discord.gg/mxJvy7PPTM'
 
-                  :pfdns='dns'
+                  :dns='dns'
                   :ip='ip'
                 />
                 <li>
@@ -250,7 +250,7 @@
                   method='BedrockTogether'
                   methodHelp='https://discord.gg/mxJvy7PPTM'
 
-                  :pfdns='dns'
+                  :dns='dns'
                   :ip='ip'
                 />
                 <li>
@@ -423,8 +423,8 @@ export default {
       dns: prefix+'.phantomfra.me',
       ip: '000.000.000.000',
 
-      consoleBrief: "This method will show you how to temporaily change your network settings so you can add (and SAVE) 3rd party servers, including \""+prefix+".phantomfra.me\".",
-      mobileBrief: "This method will show you how to download an app to your mobile device so you can join 3rd party servers, including \""+prefix+".phantomfra.me\".",
+      consoleBrief: 'This method will show you how to temporaily change your network settings so you can add (and SAVE) 3rd party servers, including \"'+prefix+'.phantomfra.me\".',
+      mobileBrief: 'This method will show you how to download an app to your mobile device so you can join 3rd party servers, including \"'+prefix+'.phantomfra.me\".',
       // git project cdn as path - use `path+images/image_name` to get image hosting in html
       path: 'https://cdn.jsdelivr.net/gh/'+git_user+'/'+project+'@'+branch+'/'+dir,
 

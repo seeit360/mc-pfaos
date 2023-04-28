@@ -53,7 +53,7 @@
   <li>
     <small class="step">Step 4)</small>
     <p>Open the "{{method}}" App</p>
-    <p>IP: "{{pfdns}}" <small>~or~</small></p>
+    <p>IP: "{{dns}}" <small>~or~</small></p>
     <p class="pad-left">"{{ip}}" </p>
     <p>Port: "19132" </p>
     <p><small>(This is the Phantom Frames Distribution BDS Server)</small></p>
@@ -124,7 +124,7 @@ export default {
     start: String,
     method: String,
     methodHelp: String,
-    pfdns: String,
+    dns: String,
     ip: String
   },
   data() {
