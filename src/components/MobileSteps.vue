@@ -1,5 +1,5 @@
 <template>
-  <li v-if="hasVideo == 'true'">
+  <li v-if="videoId != ''">
     <p class="title">{{title}} Tutorial</p>
     <div class="video">
       <YouTube :channel="channel" :videoId="videoId" :start="start" />
@@ -61,17 +61,12 @@
     <p>Open Minecraft.</p>
     <p>Select "Friends" tab > Click "BedrockTogether"</p>
     <img alt="Step 7" class="fit" :src="path+imgGroup+'-step7.png'" />
-  </li>
-  <li>
-    <small class="step">Step 8)</small>
-    <p></p>
-    <img alt="Step 8" class="fit" :src="path+imgGroup+'-step8.png'" />
     <p><small>BedrockTogether will autoforward you to the Phantom Frames BDS Server.</small></p>
   </li>
   <li>
-    <small class="step">Step 9)</small>
+    <small class="step">Final Step)</small>
     <p>Accept the "Add-on Required" download to join.</p>
-    <img alt="Step 9" class="fit" :src="path+imgGroup+'common-laststep.png'" />
+    <img alt="Final Step" class="fit" :src="path+'common-laststep.png'" />
 
     <p>Congratulations. You now have Phantom Frames.</p>
     <p><small>You are logged in as "Guest". As a courtesy to others, please keep visits to under 5 minutes, so others may join this Add-On distribution Minecraft World to download/update.</small></p>
@@ -91,12 +86,10 @@ export default {
     section: String,
     title: String,
     imgGroup: String,
-    hasVideo: String,
     channel: String, 
     videoId: String, 
     start: String,
     assist: String,
-    dns: String,
     pfdns: String
   },
   data() {

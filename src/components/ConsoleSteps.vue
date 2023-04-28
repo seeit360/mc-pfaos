@@ -1,5 +1,5 @@
 <template>
-  <li v-if="hasVideo == 'true'">
+  <li v-if="videoId != ''">
     <p class="title">{{title}} Tutorial</p>
     <div class="video">
       <YouTube :channel="channel" :videoId="videoId" :start="start" />
@@ -216,7 +216,6 @@ export default {
     section: String,
     title: String,
     imgGroup: String,
-    hasVideo: String,
     channel: String, 
     videoId: String, 
     start: String,

@@ -850,6 +850,11 @@
     z-index: 0;
     scale: 70%
   }
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
   @keyframes fireball {
     0%,
     25% {
@@ -1041,6 +1046,9 @@
     }
     .fit {
       padding: 0
+    }
+    .step {
+      margin-left: 0px;
     }
   }
   @media only screen and (max-width: 684px) {

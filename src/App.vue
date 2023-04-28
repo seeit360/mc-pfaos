@@ -39,11 +39,10 @@
                 <ConsoleSteps 
                   section='console'
                   title='Switch'
-                  hasVideo='true'
-                  imgGroup='switch'
-                  channel='Pugmatt'
+                  vChannel='Pugmatt'
                   videoId='zalT_oR1nPM'
                   start='0'
+                  imgGroup='switch'
                   assist='BedrockConnect'
                   dns='104.238.130.180'
                   pfdns='000.000.000.000'
@@ -71,7 +70,6 @@
                   section='console'
                   title='Xbox'
                   imgGroup='xbox'
-                  hasVideo='true'
                   channel='Pugmatt'
                   videoId='g8mHvasVHMs'
                   start='0'
@@ -102,7 +100,6 @@
                   section='console'
                   title='Playstation'
                   imgGroup='playstation'
-                  hasVideo='true'
                   channel='DonSibleyGames'
                   videoId='0MJVVhDeu2s'
                   start='352'
@@ -148,13 +145,11 @@
                 <MobileSteps 
                   section='mobile'
                   title='Android'
-                  hasVideo='false'
                   imgGroup='android'
                   channel=''
                   videoId=''
                   start=''
                   assist='BedrockTogether'
-                  dns='104.238.130.180'
                   pfdns='000.000.000.000'
                 />
                 <li>
@@ -179,13 +174,11 @@
                 <MobileSteps 
                   section='mobile'
                   title='iOS'
-                  hasVideo='true'
                   imgGroup='ios'
                   channel='CoveWolf'
                   videoId='BzwhrwCp3Io'
                   start='87'
                   assist='BedrockTogether'
-                  dns='104.238.130.180'
                   pfdns='000.000.000.000'
                 />
                 <li>
@@ -324,7 +317,6 @@ import Version from './components/Version.vue';
 import CssLink from './components/CssLink.vue';
 import ConsoleSteps from './components/ConsoleSteps.vue';
 import MobileSteps from './components/MobileSteps.vue';
-import Steps from './components/Steps.vue';
 
 export default {
   name: 'App',
@@ -332,8 +324,7 @@ export default {
     Version,
     CssLink,
     ConsoleSteps,
-    MobileSteps,
-    Steps
+    MobileSteps
   },
   data(){
     // build image cdn host from vars
