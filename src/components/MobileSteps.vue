@@ -49,7 +49,16 @@
   </li>
   <li>
     <small class="step">Step 3)</small>
-    <p>Install the Free version (ad supported)</p>
+    <p>Install the Free version (ad supported) <small>~or~</small> $3.49(US)</p>
+    <p>
+      <small>
+        <a           
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://play.google.com/store/apps/details?id=com.google.android.apps.paidtasks"
+        >Need Play Store cash?</a>
+      </small>
+    </p>
     <!--image-->
     <img alt="Step 3" class="fit" :src="path+group+'-step3.png'" />
   </li>
