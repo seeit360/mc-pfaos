@@ -132,7 +132,7 @@
                   group='playstation'
 
                   pros='Free, available across all devices.'
-                  cons='Can be confusing if network issues happen. May need tweeks or experimentation.'
+                  cons='Can be confusing if network issues happen. May need tweeks or experimentation. May require Playstation Plus subscription.'
                   :brief="consoleBrief"
 
                   channel='DonSibleyGames'
